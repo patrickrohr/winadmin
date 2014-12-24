@@ -1,0 +1,1072 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"catego",
+				"category_id"
+			],
+			[
+				"check",
+				"check_password"
+			],
+			[
+				"lice",
+				"license_plate"
+			],
+			[
+				"licens",
+				"license_plate"
+			],
+			[
+				"Nummer",
+				"Nummernschild"
+			],
+			[
+				"html",
+				"html_tag"
+			],
+			[
+				"license",
+				"license_plate_id"
+			],
+			[
+				"li",
+				"license_plate_changed"
+			],
+			[
+				"license_plate",
+				"license_plate_value"
+			],
+			[
+				"old",
+				"old_license_plate"
+			],
+			[
+				"book",
+				"book_license_plate"
+			],
+			[
+				"licensep",
+				"license_plate"
+			],
+			[
+				"licen",
+				"license_plate_id"
+			],
+			[
+				"unbook",
+				"unbook_license_plate"
+			],
+			[
+				"object",
+				"object_update_failed"
+			],
+			[
+				"reser",
+				"reservation"
+			],
+			[
+				"reservation",
+				"reservation_params"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"Licen",
+				"LicensePlate"
+			],
+			[
+				"categories",
+				"categories_path"
+			],
+			[
+				"category",
+				"category_params"
+			],
+			[
+				"Lic",
+				"LicensePlate"
+			],
+			[
+				"Licens",
+				"license_plates"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "db/migrate/20141221135141_create_users.rb",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 58,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Close"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ctags",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"package list",
+				"Package Control: List Packages"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby on Rails"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/Sites/winadmin",
+		"/G/Sites/winadmin/db"
+	],
+	"file_history":
+	[
+		"/G/Sites/winadmin/Gemfile",
+		"/G/Sites/winadmin/config/environments/development.rb",
+		"/G/Sites/winadmin/db/migrate/20141217150729_devise_create_users.rb",
+		"/G/Sites/winadmin/config/routes.rb",
+		"/G/Sites/winadmin/app/models/user.rb",
+		"/G/Sites/winadmin/config/initializers/devise.rb",
+		"/G/Sites/winadmin/db/migrate/20141216163159_create_clubs.rb",
+		"/G/Sites/winadmin/config/environments/production.rb",
+		"/G/Sites/stva/Gemfile",
+		"/G/Sites/winadmin/config/database.yml",
+		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
+		"/G/Sites/winadmin/db/migrate/20141216163605_create_teams.rb",
+		"/G/Sites/winadmin/app/assets/stylesheets/application.css",
+		"/G/Sites/stva/app/controllers/application_controller.rb",
+		"/G/Sites/stva/config/application.rb",
+		"/G/Sites/stva/db/migrate/20140720163423_add_price_to_reservation.rb",
+		"/G/Sites/stva/config/database.yml",
+		"/G/Sites/stva/app/controllers/public_controller.rb",
+		"/G/Sites/stva/app/controllers/license_plates_controller.rb",
+		"/G/Sites/stva/app/views/license_plates/index.html.erb",
+		"/G/Sites/stva/app/views/reservations/index.html.erb",
+		"/G/Sites/stva/config/locales/app.de.yml",
+		"/G/Sites/stva/app/views/layouts/_public_navbar.html.erb",
+		"/G/Sites/stva/app/views/public/search.html.erb",
+		"/G/Sites/stva/db/schema.rb",
+		"/G/Sites/stva/lib/tasks/check.rake",
+		"/G/Sites/stva/lib/tasks/deploy.rake",
+		"/G/Sites/stva/app/views/public/index.html.erb",
+		"/G/Sites/stva/app/assets/stylesheets/layout.css.scss",
+		"/G/Sites/stva/app/models/license_plate.rb",
+		"/G/Sites/stva/app/assets/stylesheets/application.css.scss",
+		"/G/Sites/stva/config/routes.rb",
+		"/G/Sites/stva/app/controllers/categories_controller.rb",
+		"/G/Sites/stva/app/helpers/application_helper.rb",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/9224bb106176bf231e0320230f2d51b299d11fcb/layout.css.scssc",
+		"/G/Sites/stva/app/views/layouts/_flash.html.erb",
+		"/G/Sites/stva/app/views/layouts/_meta_tags.html.erb",
+		"/G/Sites/stva/app/views/layouts/_navbar.html.erb",
+		"/G/Sites/stva/app/views/layouts/_shim.html.erb",
+		"/G/Sites/stva/app/views/layouts/application.html.erb",
+		"/G/Sites/stva/app/assets/stylesheets/prices.css.scss",
+		"/G/Sites/stva/config/locales/de.yml",
+		"/G/Sites/stva/test/fixtures/license_plates.yml",
+		"/G/Sites/stva/app/models/reservation.rb",
+		"/G/Sites/stva/app/views/reservations/new.html.erb",
+		"/G/Sites/stva/app/views/user_mailer/reservation_email.text.erb",
+		"/G/Sites/stva/config/initializers/mime_types.rb",
+		"/G/Sites/stva/app/views/static_pages/index.html.erb",
+		"/G/Sites/stva/app/views/reservations/show.html.erb",
+		"/G/Sites/stva/app/models/format.rb",
+		"/G/Sites/stva/config/environments/production.rb",
+		"/G/Sites/stva/app/assets/stylesheets/categories.css.scss",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/9224bb106176bf231e0320230f2d51b299d11fcb/sessions.css.scssc",
+		"/G/Sites/stva/config/initializers/cookies_serializer.rb",
+		"/G/Sites/stva/config/initializers/session_store.rb",
+		"/G/Sites/stva/app/views/license_plates/_license_plate.html.erb",
+		"/G/Sites/stva/bin/rake",
+		"/G/Sites/stva/Rakefile",
+		"/G/Sites/stva/config/locales/en.yml",
+		"/G/Sites/stva/app/mailers/user_mailer.rb",
+		"/G/Sites/stva/db/migrate/20140720105744_add_address_to_reservation.rb",
+		"/G/Sites/stva/config/initializers/inflections.rb",
+		"/G/Sites/stva/app/helpers/reservations_helper.rb",
+		"/G/Sites/stva/app/assets/stylesheets/reservations.css.scss",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_responsive-embed.scssc",
+		"/G/Sites/stva/app/controllers/reservations_controller.rb",
+		"/G/Sites/stva/app/views/public/thankyou.html.erb",
+		"/G/Sites/stva/app/assets/javascripts/application.js.coffee",
+		"/G/Sites/stva/test/mailers/previews/user_mailer_preview.rb",
+		"/G/Sites/stva/app/controllers/prices_controller.rb",
+		"/G/Sites/stva/app/assets/javascripts/sessions.js.coffee",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_navbar.scssc",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/7bb49ac5431a895a031754df4cfd0632538fc92f/_nav-vertical-align.scssc",
+		"/G/Sites/stva/app/views/categories/new.html.erb",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2691d215c03747c607ff73939d347ebcccff5f58/bootstrap.scssc",
+		"/G/Sites/stva/app/assets/stylesheets/sessions.css.scss",
+		"/G/Sites/stva/app/controllers/sessions_controller.rb",
+		"/G/Sites/stva/db/migrate/20140817234507_add_is_company_to_reservations.rb",
+		"/G/Sites/stva/db/migrate/20140812213454_add_dob_to_reservation.rb",
+		"/G/Sites/stva/app/assets/javascripts/reservations.js.coffee",
+		"/G/Sites/stva/db/migrate/20140707210754_add_format_id_to_license_plates.rb",
+		"/G/Sites/stva/db/migrate/20140713144609_create_reservations.rb",
+		"/G/Sites/stva/app/views/layouts/public.html.erb",
+		"/G/Sites/hotspot/app/assets/javascripts/application.js",
+		"/G/Sites/hotspot/app/assets/stylesheets/application.css",
+		"/G/Sites/hotspot/app/views/layouts/application.html.erb",
+		"/G/Sites/hotspot/Gemfile",
+		"/G/Sites/hotspot/app/controllers/public_controller.rb",
+		"/G/Sites/hotspot/app/controllers/application_controller.rb",
+		"/G/Sites/hotspot/config/routes.rb",
+		"/G/Sites/hotspot/app/views/layouts/_map_scripts.html.erb",
+		"/G/Sites/stva/Gemfile.lock",
+		"/G/Sites/stva/log/production.log",
+		"/G/Sites/stva/app/helpers/bootstrap_form_helper.rb",
+		"/G/Sites/stva/config/boot.rb",
+		"/G/Sites/stva/bin/bundle",
+		"/G/Sites/stva/app/views/categories/index.html.erb",
+		"/G/Sites/stva/app/views/static_pages/help.html.erb",
+		"/G/Sites/stva/test/test_helper.rb",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_utilities.scssc",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_button-groups.scssc",
+		"/G/Sites/stva/config/environments/development.rb",
+		"/G/Sites/stva/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
+		"/G/Sites/stva/test/models/reservation_test.rb",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/7bb49ac5431a895a031754df4cfd0632538fc92f/_background-variant.scssc",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_variables.scssc",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2691d215c03747c607ff73939d347ebcccff5f58/_bootstrap-sprockets.scssc",
+		"/G/Sites/stva/app/models/category.rb",
+		"/G/Sites/stva/test/fixtures/reservations.yml",
+		"/G/Sites/stva/app/views/license_plates/new.html.erb",
+		"/G/Sites/stva/lib/tasks/cleanup_reservations.rake",
+		"/G/Sites/stva/app/controllers/static_pages_controller.rb",
+		"/G/Sites/stva/config/initializers/wrap_parameters.rb",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/9224bb106176bf231e0320230f2d51b299d11fcb/license_plates.css.scssc",
+		"/G/Sites/stva/app/assets/stylesheets/license_plates.css.scss",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/7bb49ac5431a895a031754df4cfd0632538fc92f/_image.scssc",
+		"/G/Sites/stva/db/test.sqlite3",
+		"/G/Sites/stva/app/views/shared/_form_errors.html.erb",
+		"/G/Sites/stva/test/helpers/public_helper_test.rb",
+		"/G/Sites/stva/app/helpers/public_helper.rb",
+		"/G/Sites/stva/app/views/sessions/index.html.erb",
+		"/G/Sites/stva/public/assets/application-40e860e6fa9905839936d2e93a8e29de.js",
+		"/G/Sites/stva/public/assets/manifest-0d31659b451e2e4ed1d3cc3f9e857b33.json",
+		"/G/Sites/stva/app/assets/javascripts/prices.js.coffee",
+		"/G/Sites/stva/app/assets/javascripts/categories.js.coffee",
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_jumbotron.scssc",
+		"/G/Sites/stva/app/views/prices/filter.html.erb",
+		"/G/Sites/stva/app/views/prices/index.html.erb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"category",
+			"vorname",
+			"schliessen",
+			"time",
+			"rake",
+			"checkout",
+			"release-",
+			"login",
+			"will",
+			"actions",
+			"    \n",
+			"font"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "db/migrate/20141221135141_create_users.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								150,
+								150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								412,
+								412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/user.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "winadmin.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"user",
+				"app\\models\\user.rb"
+			],
+			[
+				"routes",
+				"config\\routes.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"appcss",
+				"winadmin\\app\\assets\\stylesheets\\application.css"
+			],
+			[
+				"schema",
+				"db\\schema.rb"
+			],
+			[
+				"rak",
+				"lib\\tasks\\deploy.rake"
+			],
+			[
+				"apphelper",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"layou",
+				"app\\assets\\stylesheets\\layout.css.scss"
+			],
+			[
+				"layout",
+				"app\\assets\\stylesheets\\layout.css.scss"
+			],
+			[
+				"apphelp",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"applicatio",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"css",
+				"app\\assets\\stylesheets\\layout.css.scss"
+			],
+			[
+				"de.yml",
+				"config\\locales\\app.de.yml"
+			],
+			[
+				"rake",
+				"lib\\tasks\\deploy.rake"
+			],
+			[
+				"licen",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"licco",
+				"app\\controllers\\license_plates_controller.rb"
+			],
+			[
+				"deyml",
+				"config\\locales\\app.de.yml"
+			],
+			[
+				"licind",
+				"app\\views\\license_plates\\index.html.erb"
+			],
+			[
+				"resin",
+				"app\\views\\reservations\\index.html.erb"
+			],
+			[
+				"lice",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"format",
+				"app\\models\\format.rb"
+			],
+			[
+				"public",
+				"app\\controllers\\public_controller.rb"
+			],
+			[
+				"search",
+				"app\\views\\public\\search.html.erb"
+			],
+			[
+				"viewlicein",
+				"app\\views\\license_plates\\index.html.erb"
+			],
+			[
+				"viewreser",
+				"app\\views\\reservations\\new.html.erb"
+			],
+			[
+				"emai",
+				"app\\views\\user_mailer\\reservation_email.text.erb"
+			],
+			[
+				"de",
+				"config\\locales\\de.yml"
+			],
+			[
+				"mime",
+				"config\\initializers\\mime_types.rb"
+			],
+			[
+				"lic",
+				"app\\controllers\\license_plates_controller.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"reseshow",
+				"app\\views\\reservations\\show.html.erb"
+			],
+			[
+				"licensint",
+				"app\\views\\license_plates\\index.html.erb"
+			],
+			[
+				"viewreservationin",
+				"app\\views\\reservations\\index.html.erb"
+			],
+			[
+				"appjs",
+				"app\\assets\\javascripts\\application.js.coffee"
+			],
+			[
+				"navbar",
+				"app\\views\\layouts\\_public_navbar.html.erb"
+			],
+			[
+				"scss",
+				"app\\assets\\stylesheets\\application.css.scss"
+			],
+			[
+				"license",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"migration",
+				"db\\migrate\\20140817234507_add_is_company_to_reservations.rb"
+			],
+			[
+				"rescon",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"reservation",
+				"app\\models\\reservation.rb"
+			],
+			[
+				"appde",
+				"config\\locales\\app.de.yml"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"reservationnew",
+				"app\\views\\reservations\\new.html.erb"
+			],
+			[
+				"migra",
+				"db\\migrate\\20140720105744_add_address_to_reservation.rb"
+			],
+			[
+				"de.",
+				"config\\locales\\app.de.yml"
+			],
+			[
+				"de.y",
+				"config\\locales\\de.yml"
+			],
+			[
+				"licensepl",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"publicon",
+				"app\\controllers\\public_controller.rb"
+			],
+			[
+				"appco",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"layapp",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"applcss",
+				"hotspot\\app\\assets\\stylesheets\\application.css"
+			],
+			[
+				"boots",
+				"stva\\app\\helpers\\bootstrap_form_helper.rb"
+			],
+			[
+				"help",
+				"app\\views\\static_pages\\help.html.erb"
+			],
+			[
+				"viewsmail",
+				"app\\views\\user_mailer\\reservation_email.text.erb"
+			],
+			[
+				"prod",
+				"config\\environments\\production.rb"
+			],
+			[
+				"reservco",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"apphel",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"laycss",
+				"app\\assets\\stylesheets\\layout.css.scss"
+			],
+			[
+				"app.css",
+				"app\\assets\\stylesheets\\application.css.scss"
+			],
+			[
+				"ap",
+				"config\\application.rb"
+			],
+			[
+				"reser",
+				"app\\models\\reservation.rb"
+			],
+			[
+				"reserva",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"category",
+				"app\\models\\category.rb"
+			],
+			[
+				"reserv",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"rout",
+				"config\\routes.rb"
+			],
+			[
+				"statiind",
+				"app\\views\\static_pages\\index.html.erb"
+			],
+			[
+				"form",
+				"app\\models\\format.rb"
+			],
+			[
+				"liccon",
+				"app\\controllers\\license_plates_controller.rb"
+			],
+			[
+				"static",
+				"app\\controllers\\static_pages_controller.rb"
+			],
+			[
+				"licin",
+				"app\\views\\license_plates\\index.html.erb"
+			],
+			[
+				"lics",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"time",
+				"tmp\\cache\\assets\\development\\sass\\7bb49ac5431a895a031754df4cfd0632538fc92f\\_image.scssc"
+			],
+			[
+				"appli",
+				"config\\application.rb"
+			],
+			[
+				"resinde",
+				"app\\views\\reservations\\index.html.erb"
+			],
+			[
+				"sear",
+				"app\\views\\public\\search.html.erb"
+			],
+			[
+				"layoutcss",
+				"app\\assets\\stylesheets\\layout.css.scss"
+			],
+			[
+				"applica",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"applican",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"publichtml",
+				"app\\views\\layouts\\public.html.erb"
+			],
+			[
+				"reservations",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"rescont",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"applicaion",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"pulbi",
+				"app\\controllers\\public_controller.rb"
+			],
+			[
+				"a",
+				"config\\application.rb"
+			],
+			[
+				"javascript",
+				"app\\assets\\javascripts\\application.js.coffee"
+			],
+			[
+				"applicj",
+				"app\\assets\\javascripts\\application.js.coffee"
+			],
+			[
+				"mai",
+				"app\\mailers\\user_mailer.rb"
+			],
+			[
+				"applhelper",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"applic",
+				"config\\application.rb"
+			],
+			[
+				"en",
+				"config\\locales\\en.yml"
+			],
+			[
+				"reservat",
+				"app\\models\\reservation.rb"
+			],
+			[
+				"appl",
+				"config\\application.rb"
+			],
+			[
+				"envi",
+				"config\\environment.rb"
+			],
+			[
+				"route",
+				"config\\routes.rb"
+			],
+			[
+				"sesco",
+				"app\\controllers\\sessions_controller.rb"
+			],
+			[
+				"rescontr",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"licenseplate",
+				"app\\models\\license_plate.rb"
+			],
+			[
+				"catco",
+				"app\\controllers\\categories_controller.rb"
+			],
+			[
+				"reserc",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"migr",
+				"db\\migrate\\20140720105744_add_address_to_reservation.rb"
+			],
+			[
+				"miadd",
+				"db\\migrate\\20140720163423_add_price_to_reservation.rb"
+			],
+			[
+				"app",
+				"config\\application.rb"
+			],
+			[
+				"recon",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"appcon",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"application",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"data",
+				"config\\database.yml"
+			],
+			[
+				"resecon",
+				"app\\controllers\\reservations_controller.rb"
+			],
+			[
+				"resevation",
+				"app\\models\\reservation.rb"
+			],
+			[
+				"reseva",
+				"app\\models\\reservation.rb"
+			],
+			[
+				"resindex",
+				"app\\views\\reservations\\index.html.erb"
+			],
+			[
+				"categor",
+				"app\\controllers\\categories_controller.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"migrations",
+				"db\\migrate\\20140713144609_create_reservations.rb"
+			],
+			[
+				"ricesco",
+				"app\\controllers\\prices_controller.rb"
+			],
+			[
+				"",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"sessionin",
+				"app\\views\\sessions\\index.html.erb"
+			],
+			[
+				"application.js",
+				"app\\assets\\javascripts\\application.js"
+			],
+			[
+				"layoutflash",
+				"app\\views\\layouts\\_flash.html.erb"
+			],
+			[
+				"staticpagesindex",
+				"app\\views\\static_pages\\index.html.erb"
+			],
+			[
+				"staticpagesinde",
+				"app\\views\\static_pages\\index.html.erb"
+			],
+			[
+				"session",
+				"app\\controllers\\sessions_controller.rb"
+			],
+			[
+				"categori",
+				"app\\controllers\\categories_controller.rb"
+			],
+			[
+				"helper",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"applicationh",
+				"app\\helpers\\application_helper.rb"
+			],
+			[
+				"prices",
+				"app\\controllers\\prices_controller.rb"
+			],
+			[
+				"li",
+				"app\\controllers\\license_plates_controller.rb"
+			],
+			[
+				"viewli",
+				"app\\views\\license_plates\\index.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"G:\\Sites\\stva\\stva.sublime-project"
+			],
+			[
+				"win",
+				"G:\\Sites\\winadmin\\winadmin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 217.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
