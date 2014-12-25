@@ -1,0 +1,5 @@
+<%= form_for @user_session, builder: BootstrapFormBuilder do |f| %>
+  <%= f.bs_text_field(:email) %>
+  <%= f.bs_password_field(:password) %>
+  <%= f.bs_submit("Login") %>
+<% end %>

@@ -10,6 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
+
+$font-size-base: 13px;
+$navbar-default-color: #c1c1c1;
+$navbar-default-link-color: #fff;
+$navbar-inverse-border: none;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";

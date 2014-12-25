@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <a class="navbar-right" href="//www.gl.ch"> <img style="float:left;" src="//www.gl.ch/pictures/logo-kanton-glarus.png" height="55"></a>
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <%#= link_to 'Home', backend_root_path, class: "navbar-brand" %>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <%= build_sub_nav({public: [:index, :search]}, :public) %>
+    </ul>
+  </div>
+</div>
