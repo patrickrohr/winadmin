@@ -30,7 +30,6 @@ class RightsGroup
     return object
   end
 
-
   # To act like an ActiveRecord Model class
   def persisted?
     false

@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
 
   def has_rights(*groups)
     if check_for_rights *groups
-
+      
   end
 
   def user_is(group)

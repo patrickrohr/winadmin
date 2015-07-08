@@ -4,12 +4,16 @@
 		"selected_items":
 		[
 			[
-				"load",
-				"load"
+				"user",
+				"user_session"
 			],
 			[
-				"user",
-				"user_id"
+				"redire",
+				"redirect"
+			],
+			[
+				"load",
+				"load"
 			],
 			[
 				"authentic",
@@ -128,42 +132,10 @@
 	"buffers":
 	[
 		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 1671,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/user.rb",
-			"settings":
-			{
-				"buffer_size": 371,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/sessions_controller.rb",
-			"settings":
-			{
-				"buffer_size": 453,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/models/session.rb",
 			"settings":
 			{
-				"buffer_size": 870,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/sessions/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 180,
+				"buffer_size": 988,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +143,15 @@
 			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 373,
+				"buffer_size": 663,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/users_helper.rb",
+			"settings":
+			{
+				"buffer_size": 23,
 				"line_ending": "Unix"
 			}
 		},
@@ -179,40 +159,18 @@
 			"file": "app/models/rights_group.rb",
 			"settings":
 			{
-				"buffer_size": 581,
+				"buffer_size": 630,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/users_controller.rb",
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
 			"settings":
 			{
-				"buffer_size": 435,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 295,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/helpers/bootstrap_forms_helper.rb",
-			"settings":
-			{
-				"buffer_size": 1500,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/static_pages/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 20,
-				"line_ending": "Windows"
+				"buffer_size": 2331,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
 			}
 		}
 	],
@@ -299,32 +257,35 @@
 		"/G/Sites/winadmin/app/views/layouts",
 		"/G/Sites/winadmin/app/views/sessions",
 		"/G/Sites/winadmin/app/views/static_pages",
-		"/G/Sites/winadmin/app/views/users",
-		"/G/Sites/winadmin/db",
-		"/G/Sites/winadmin/db/migrate"
+		"/G/Sites/winadmin/app/views/users"
 	],
 	"file_history":
 	[
-		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
-		"/G/Sites/winadmin/app/models/session.rb",
+		"/G/Sites/winadmin/lib/abilities.rb",
+		"/G/Sites/winadmin/config/routes.rb",
 		"/G/Sites/winadmin/config/application.rb",
+		"/G/Sites/winadmin/app/models/user.rb",
+		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
+		"/G/Sites/winadmin/app/views/sessions/new.html.erb",
+		"/G/Sites/winadmin/app/controllers/application_controller.rb",
+		"/G/Sites/winadmin/app/models/rights_group.rb",
+		"/G/Sites/winadmin/app/controllers/users_controller.rb",
+		"/G/Sites/winadmin/app/views/users/_form.html.erb",
+		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
+		"/G/Sites/winadmin/app/views/static_pages/index.html.erb",
+		"/G/Sites/winadmin/app/models/session.rb",
+		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
 		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
 		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/app/helpers/sessions_helper.rb",
 		"/G/Sites/winadmin/tmp/cache/assets/development/sass/d03257db53084497942202ff52b64d8a6ff46c33/_hide-text.scssc",
 		"/G/Sites/winadmin/app/assets/stylesheets/layout.css.scss",
-		"/G/Sites/winadmin/app/views/users/_form.html.erb",
 		"/G/Sites/winadmin/app/views/users/new.html.erb",
-		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
 		"/G/Sites/winadmin/app/views/layouts/application.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/_flash.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
-		"/G/Sites/winadmin/app/controllers/users_controller.rb",
-		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
-		"/G/Sites/winadmin/app/models/rights_group.rb",
 		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/app/models/club.rb",
-		"/G/Sites/winadmin/app/models/user.rb",
 		"/G/Sites/winadmin/app/views/users/index.html.erb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
 		"/G/Sites/winadmin/app/models/game.rb",
@@ -338,7 +299,6 @@
 		"/G/Sites/winadmin/db/migrate/20141216163159_create_clubs.rb",
 		"/G/Sites/winadmin/config/environments/development.rb",
 		"/G/Sites/winadmin/db/migrate/20141217150729_devise_create_users.rb",
-		"/G/Sites/winadmin/config/routes.rb",
 		"/G/Sites/winadmin/config/initializers/devise.rb",
 		"/G/Sites/winadmin/config/environments/production.rb",
 		"/G/Sites/stva/Gemfile",
@@ -428,11 +388,7 @@
 		"/G/Sites/stva/app/helpers/bootstrap_form_helper.rb",
 		"/G/Sites/stva/config/boot.rb",
 		"/G/Sites/stva/bin/bundle",
-		"/G/Sites/stva/app/views/categories/index.html.erb",
-		"/G/Sites/stva/app/views/static_pages/help.html.erb",
-		"/G/Sites/stva/test/test_helper.rb",
-		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_utilities.scssc",
-		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_button-groups.scssc"
+		"/G/Sites/stva/app/views/categories/index.html.erb"
 	],
 	"find":
 	{
@@ -479,114 +435,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/routes.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1671,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								102
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/models/user.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 371,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								360,
-								360
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/sessions_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								441,
-								441
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/models/session.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 870,
+						"buffer_size": 988,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								42,
+								42
 							]
 						],
 						"settings":
@@ -603,26 +469,27 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/views/sessions/new.html.erb",
+					"buffer": 1,
+					"file": "app/controllers/application_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 180,
+						"buffer_size": 663,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								180,
-								180
+								663,
+								663
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -632,20 +499,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "app/helpers/users_helper.rb",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 373,
+						"buffer_size": 23,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								373,
-								373
+								0,
+								0
 							]
 						],
 						"settings":
@@ -653,156 +520,70 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 10.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/rights_group.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "app/models/rights_group.rb",
+					"buffer": 4,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 581,
+						"buffer_size": 2331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								544,
-								544
+								2331,
+								2331
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/controllers/users_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 435,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/users/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 295,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/helpers/bootstrap_forms_helper.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1500,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								283,
-								283
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/views/static_pages/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 20,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15,
-								15
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -855,6 +636,22 @@
 		"selected_items":
 		[
 			[
+				"rihg",
+				"app\\models\\rights_group.rb"
+			],
+			[
+				"appco",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"user",
+				"app\\models\\user.rb"
+			],
+			[
+				"sess",
+				"app\\models\\session.rb"
+			],
+			[
 				"session",
 				"app\\models\\session.rb"
 			],
@@ -875,16 +672,8 @@
 				"config\\routes.rb"
 			],
 			[
-				"sess",
-				"app\\controllers\\sessions_controller.rb"
-			],
-			[
 				"usercon",
 				"app\\controllers\\users_controller.rb"
-			],
-			[
-				"user",
-				"app\\models\\user.rb"
 			],
 			[
 				"schema",
@@ -1081,10 +870,6 @@
 			[
 				"publicon",
 				"app\\controllers\\public_controller.rb"
-			],
-			[
-				"appco",
-				"app\\controllers\\application_controller.rb"
 			],
 			[
 				"layapp",
@@ -1361,10 +1146,6 @@
 			[
 				"staticpagesinde",
 				"app\\views\\static_pages\\index.html.erb"
-			],
-			[
-				"categori",
-				"app\\controllers\\categories_controller.rb"
 			]
 		],
 		"width": 0.0
@@ -1376,7 +1157,7 @@
 		[
 			[
 				"",
-				"G:\\Sites\\stva\\stva.sublime-project"
+				"G:\\Users\\Patrick\\Desktop\\cocktailme\\cocktailme.sublime-workspace"
 			],
 			[
 				"win",
