@@ -6,6 +6,13 @@ Rails.application.routes.draw do
 
   get 'logout' => 'sessions#destroy'
   match '/help', to: 'static_pages#help', via: :get
+
+  resources :sessions do
+    collection do
+      get 'forgot_password', to: 'sessions#forgot_password'
+      post 'forgot_password', to: 'sessions#password_reset'
+    end
+  end
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

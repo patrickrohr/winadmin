@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      UserMailer.new_user(@user).deliver
       redirect_to users_path, success: I18n.t(:object_created)
     else
       flash.now.alert = I18n.t :object_create_failed

@@ -135,8 +135,51 @@
 			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1062,
+				"buffer_size": 1087,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class SessionsController < ApplicationController\n  before_filter :redirect, :only => [:new, :create]\n\n  def new\n    # Is defined in application_controller\n    # @user_session = Session.new session\n  end\n\n  def create\n    self.user_session.create login_params\n    if self.user_session.authenticate\n      redirect_to root_path\n    else\n      render :new, alert: I18n.t(:login_failed)\n    end\n  end\n\n  def destroy\n    self.user_session.destroy\n    redirect_to root_path\n  end\n\n  def forgot_password\n  end\n\n  def password_reset\n    # Create new password for user\n    user = User.\n    # Send it to user\n  end\n\n\n  private\n  def login_params\n    params.require(:session).permit(:email, :password)\n  end\n\n  def redirect\n    redirect_to root_path if user_session.authenticated?\n  end\nend\n",
+			"file": "app/controllers/sessions_controller.rb",
+			"file_size": 762,
+			"file_write_time": 130812755265149384,
+			"settings":
+			{
+				"buffer_size": 779,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sessions/forgot_password.html.erb",
+			"settings":
+			{
+				"buffer_size": 233,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 199,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/locales/app.en.yml",
+			"settings":
+			{
+				"buffer_size": 596,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -167,7 +210,15 @@
 			"file": "app/views/users/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 330,
+				"buffer_size": 321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/session.rb",
+			"settings":
+			{
+				"buffer_size": 988,
 				"line_ending": "Windows"
 			}
 		}
@@ -442,7 +493,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -451,15 +502,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1062,
+						"buffer_size": 1087,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								213,
+								213
 							]
 						],
 						"settings":
@@ -472,11 +523,155 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "app/controllers/sessions_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/sessions/forgot_password.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/sessions/new.html.erb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/locales/app.en.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "app/views/shared/_form_errors.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -500,11 +695,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 7,
 					"file": "app/controllers/application_controller.rb",
 					"semi_transient": false,
 					"settings":
@@ -530,11 +725,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 8,
 					"file": "app/views/layouts/application.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -560,16 +755,44 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 9,
 					"file": "app/views/users/_form.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 330,
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/models/session.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 988,
 						"regions":
 						{
 						},
@@ -582,13 +805,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 230.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -643,8 +868,20 @@
 		"selected_items":
 		[
 			[
+				"route",
+				"config\\routes.rb"
+			],
+			[
+				"session",
+				"app\\models\\session.rb"
+			],
+			[
 				"user",
 				"app\\models\\user.rb"
+			],
+			[
+				"sessionc",
+				"app\\controllers\\sessions_controller.rb"
 			],
 			[
 				"en",
@@ -671,10 +908,6 @@
 				"app\\controllers\\users_controller.rb"
 			],
 			[
-				"route",
-				"config\\routes.rb"
-			],
-			[
 				"schema",
 				"db\\schema.rb"
 			],
@@ -696,10 +929,6 @@
 			],
 			[
 				"sess",
-				"app\\models\\session.rb"
-			],
-			[
-				"session",
 				"app\\models\\session.rb"
 			],
 			[
@@ -1149,10 +1378,6 @@
 			[
 				"ricesco",
 				"app\\controllers\\prices_controller.rb"
-			],
-			[
-				"",
-				"app\\controllers\\application_controller.rb"
 			]
 		],
 		"width": 0.0
