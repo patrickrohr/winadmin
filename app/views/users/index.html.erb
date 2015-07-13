@@ -1,0 +1,24 @@
+<h1><%= t :users_index %></h1>
+
+<div class="responsive-table">
+  <table class="table table-condensed table-responsive">
+    <thead>
+      <tr>
+        <th><%= User.human_attribute_name :first_name %>
+        <th><%= User.human_attribute_name :last_name %>
+        <th><%= User.human_attribute_name :email %>
+        <th><%= t :rights_group %>
+        <th><%= t :actions %>
+        <th>
+    <tbody>
+      <% @users.each do |obj| %>
+        <tr>
+          <td><%= obj.first_name %>
+          <td><%= obj.last_name %>
+          <td><%= obj.email %>
+          <td><%= obj.rights_group.name %>
+          <td><%= link_to(t(:update), edit_user_path(obj)) %>
+          <td><%= link_to(t(:delete), obj, method: :delete, data: { confirm: t(:delete_confirm) }) %>
+      <% end %>
+  </table>
+</div>

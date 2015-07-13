@@ -2,7 +2,8 @@ class SessionsController < ApplicationController
   before_filter :redirect, :only => [:new, :create]
 
   def new
-    # @user_session = Session.new
+    # Is defined in application_controller
+    # @user_session = Session.new session
   end
 
   def create

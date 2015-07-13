@@ -132,10 +132,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/session.rb",
+			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 988,
+				"buffer_size": 1062,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/shared/_form_errors.html.erb",
+			"settings":
+			{
+				"buffer_size": 256,
 				"line_ending": "Windows"
 			}
 		},
@@ -143,41 +151,36 @@
 			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
-				"buffer_size": 663,
+				"buffer_size": 694,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/helpers/users_helper.rb",
+			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 23,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/rights_group.rb",
-			"settings":
-			{
-				"buffer_size": 630,
+				"buffer_size": 818,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"file": "app/views/users/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 2331,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
+				"buffer_size": 330,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 127.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -249,44 +252,52 @@
 		"/G/Sites/winadmin",
 		"/G/Sites/winadmin/app",
 		"/G/Sites/winadmin/app/assets",
-		"/G/Sites/winadmin/app/assets/stylesheets",
+		"/G/Sites/winadmin/app/assets/javascripts",
 		"/G/Sites/winadmin/app/controllers",
 		"/G/Sites/winadmin/app/helpers",
 		"/G/Sites/winadmin/app/models",
 		"/G/Sites/winadmin/app/views",
 		"/G/Sites/winadmin/app/views/layouts",
 		"/G/Sites/winadmin/app/views/sessions",
+		"/G/Sites/winadmin/app/views/shared",
 		"/G/Sites/winadmin/app/views/static_pages",
 		"/G/Sites/winadmin/app/views/users"
 	],
 	"file_history":
 	[
-		"/G/Sites/winadmin/lib/abilities.rb",
-		"/G/Sites/winadmin/config/routes.rb",
-		"/G/Sites/winadmin/config/application.rb",
 		"/G/Sites/winadmin/app/models/user.rb",
-		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
 		"/G/Sites/winadmin/app/views/sessions/new.html.erb",
 		"/G/Sites/winadmin/app/controllers/application_controller.rb",
-		"/G/Sites/winadmin/app/models/rights_group.rb",
+		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
+		"/G/Sites/winadmin/app/views/users/edit.html.erb",
+		"/G/Sites/winadmin/config/routes.rb",
+		"/G/Sites/winadmin/config/locales/app.en.yml",
 		"/G/Sites/winadmin/app/controllers/users_controller.rb",
-		"/G/Sites/winadmin/app/views/users/_form.html.erb",
-		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
-		"/G/Sites/winadmin/app/views/static_pages/index.html.erb",
-		"/G/Sites/winadmin/app/models/session.rb",
-		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
+		"/G/Sites/winadmin/app/helpers/application_helper.rb",
 		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
+		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
+		"/G/Sites/winadmin/app/views/users/index.html.erb",
+		"/G/Sites/winadmin/app/models/session.rb",
+		"/G/Sites/winadmin/app/assets/javascripts/application.js",
 		"/G/Sites/winadmin/db/schema.rb",
+		"/G/Sites/winadmin/config/locales/en.yml",
+		"/G/Sites/winadmin/app/views/static_pages/help.html.erb",
+		"/G/Sites/winadmin/app/helpers/users_helper.rb",
+		"/G/Sites/winadmin/app/models/rights_group.rb",
+		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
+		"/G/Sites/winadmin/lib/abilities.rb",
+		"/G/Sites/winadmin/config/application.rb",
+		"/G/Sites/winadmin/app/views/users/_form.html.erb",
+		"/G/Sites/winadmin/app/views/static_pages/index.html.erb",
+		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
 		"/G/Sites/winadmin/app/helpers/sessions_helper.rb",
 		"/G/Sites/winadmin/tmp/cache/assets/development/sass/d03257db53084497942202ff52b64d8a6ff46c33/_hide-text.scssc",
 		"/G/Sites/winadmin/app/assets/stylesheets/layout.css.scss",
 		"/G/Sites/winadmin/app/views/users/new.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/application.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/_flash.html.erb",
-		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
 		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/app/models/club.rb",
-		"/G/Sites/winadmin/app/views/users/index.html.erb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
 		"/G/Sites/winadmin/app/models/game.rb",
 		"/G/Sites/winadmin/app/models/league.rb",
@@ -381,14 +392,7 @@
 		"/G/Sites/hotspot/Gemfile",
 		"/G/Sites/hotspot/app/controllers/public_controller.rb",
 		"/G/Sites/hotspot/app/controllers/application_controller.rb",
-		"/G/Sites/hotspot/config/routes.rb",
-		"/G/Sites/hotspot/app/views/layouts/_map_scripts.html.erb",
-		"/G/Sites/stva/Gemfile.lock",
-		"/G/Sites/stva/log/production.log",
-		"/G/Sites/stva/app/helpers/bootstrap_form_helper.rb",
-		"/G/Sites/stva/config/boot.rb",
-		"/G/Sites/stva/bin/bundle",
-		"/G/Sites/stva/app/views/categories/index.html.erb"
+		"/G/Sites/hotspot/config/routes.rb"
 	],
 	"find":
 	{
@@ -396,9 +400,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -406,6 +411,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sessions_path",
+			"session_path",
 			"category",
 			"vorname",
 			"schliessen",
@@ -440,49 +447,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/session.rb",
+					"file": "app/controllers/users_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 1062,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								42,
-								42
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 663,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								663,
-								663
+								240,
+								240
 							]
 						],
 						"settings":
@@ -499,48 +476,48 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/helpers/users_helper.rb",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "app/views/shared/_form_errors.html.erb",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23,
+						"buffer_size": 256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								256,
+								256
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/models/rights_group.rb",
+					"buffer": 2,
+					"file": "app/controllers/application_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 630,
+						"buffer_size": 694,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								372,
+								372
 							]
 						],
 						"settings":
@@ -553,31 +530,59 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
+					"file": "app/views/layouts/application.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2331,
+						"buffer_size": 818,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2331,
-								2331
+								609,
+								609
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/users/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -624,6 +629,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "winadmin.sublime-project",
 	"replace":
 	{
@@ -633,8 +639,53 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"user",
+				"app\\models\\user.rb"
+			],
+			[
+				"en",
+				"config\\locales\\app.en.yml"
+			],
+			[
+				"aappc",
+				"app\\controllers\\application_controller.rb"
+			],
+			[
+				"app",
+				"config\\locales\\app.en.yml"
+			],
+			[
+				"users",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"ape",
+				"config\\locales\\app.en.yml"
+			],
+			[
+				"userco",
+				"app\\controllers\\users_controller.rb"
+			],
+			[
+				"route",
+				"config\\routes.rb"
+			],
+			[
+				"schema",
+				"db\\schema.rb"
+			],
+			[
+				"bootstrap",
+				"app\\helpers\\bootstrap_forms_helper.rb"
+			],
+			[
+				"schem",
+				"db\\schema.rb"
+			],
 			[
 				"rihg",
 				"app\\models\\rights_group.rb"
@@ -642,10 +693,6 @@
 			[
 				"appco",
 				"app\\controllers\\application_controller.rb"
-			],
-			[
-				"user",
-				"app\\models\\user.rb"
 			],
 			[
 				"sess",
@@ -664,10 +711,6 @@
 				"app\\controllers\\application_controller.rb"
 			],
 			[
-				"app",
-				"config\\application.rb"
-			],
-			[
 				"rout",
 				"config\\routes.rb"
 			],
@@ -676,20 +719,8 @@
 				"app\\controllers\\users_controller.rb"
 			],
 			[
-				"schema",
-				"db\\schema.rb"
-			],
-			[
-				"route",
-				"config\\routes.rb"
-			],
-			[
 				"routes",
 				"config\\routes.rb"
-			],
-			[
-				"userco",
-				"app\\controllers\\users_controller.rb"
 			],
 			[
 				"gem",
@@ -1032,10 +1063,6 @@
 				"config\\application.rb"
 			],
 			[
-				"en",
-				"config\\locales\\en.yml"
-			],
-			[
 				"reservat",
 				"app\\models\\reservation.rb"
 			],
@@ -1126,26 +1153,6 @@
 			[
 				"",
 				"app\\controllers\\application_controller.rb"
-			],
-			[
-				"sessionin",
-				"app\\views\\sessions\\index.html.erb"
-			],
-			[
-				"application.js",
-				"app\\assets\\javascripts\\application.js"
-			],
-			[
-				"layoutflash",
-				"app\\views\\layouts\\_flash.html.erb"
-			],
-			[
-				"staticpagesindex",
-				"app\\views\\static_pages\\index.html.erb"
-			],
-			[
-				"staticpagesinde",
-				"app\\views\\static_pages\\index.html.erb"
 			]
 		],
 		"width": 0.0
@@ -1153,11 +1160,12 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
 				"",
-				"G:\\Users\\Patrick\\Desktop\\cocktailme\\cocktailme.sublime-workspace"
+				"G:\\Sites\\stva\\stva.sublime-project"
 			],
 			[
 				"win",
@@ -1169,6 +1177,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],

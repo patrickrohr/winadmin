@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+  add_flash_types :success
 
   attr_accessor :user_session
   before_filter :load_user_session
@@ -12,8 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
   def has_rights(*groups)
-    if check_for_rights *groups
-      
+    return true if check_for_rights *groups
   end
 
   def user_is(group)

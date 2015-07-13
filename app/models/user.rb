@@ -1,7 +1,9 @@
 class User < ActiveRecord::Base
   has_secure_password
 
-  # TODO: validations
+  validates :first_name, :last_name, :email, presence: true
+  validates :email, uniqueness: { case_sensitive: false }
+  validates :rights_group_id, inclusion: { in: 0..2 }
 
   before_validation { generate_password if self.password.nil? }
 

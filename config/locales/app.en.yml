@@ -1,0 +1,11 @@
+en:
+  close: "close"
+  users_index: "Users Index"
+  actions: "Actions"
+  delete_confirm: "Are you sure you want to delete this?"
+  object_created: "Object has been successfully created"
+  object_updated: "Object has been successfully updated"
+  object_deleted: "Object has been successfully deleted"
+  object_update_failed: "An error has occured. Object could not be updated."
+  object_delete_failed: "An error has occured. Object could not be deleted."
+  object_create_failed: "An error has occured. Object could not be created."

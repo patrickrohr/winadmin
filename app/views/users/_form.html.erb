@@ -1,7 +1,8 @@
+<%= render 'shared/form_errors', obj: @user %>
 <%= form_for user, builder: BootstrapFormBuilder do |f| %>
   <%= f.bs_text_field(:first_name) %>
   <%= f.bs_text_field(:last_name) %>
   <%= f.bs_text_field(:email) %>
-  <%= f.bs_select(:rights_group_id, RightsGroup.all_for_select, include_blank: true) %>
+  <%= f.bs_select(:rights_group_id, RightsGroup.all_for_select) %>
   <%= f.bs_submit("SUBMIT") %>
 <% end %>
