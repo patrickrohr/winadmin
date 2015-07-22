@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
   resources :users
+  resources :sports
 
   get 'logout' => 'sessions#destroy'
   match '/help', to: 'static_pages#help', via: :get

@@ -1,0 +1,6 @@
+<%= render 'shared/form_errors', obj: @sport %>
+<%= form_for sport, builder: BootstrapFormBuilder do |f| %>
+  <%= f.bs_text_field(:name) %>
+  <%= f.bs_number_field(:number_of_sets) %>
+  <%= f.bs_submit("SUBMIT") %>
+<% end %>

@@ -7,6 +7,10 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
     bs_generic_field(method, options, :text_field)
   end
 
+  def bs_number_field(method, options = {})
+    bs_generic_field(method, options, :number_field)
+  end
+
   def bs_password_field(method, options = {})
     bs_generic_field(method, options, :password_field)
   end

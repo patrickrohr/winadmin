@@ -1,0 +1,18 @@
+<h1><%= t :sports_index %></h1>
+
+<div class="responsive-table">
+  <table class="table table-condensed table-responsive">
+    <thead>
+      <tr>
+        <th><%= Sport.human_attribute_name :name %>
+        <th><%= t :actions %>
+        <th>
+    <tbody>
+      <% @sports.each do |obj| %>
+        <tr>
+          <td><%= obj.name %>
+          <td><%= link_to(t(:update), action: :edit, id: obj) %>
+          <td><%= link_to(t(:delete), obj, method: :delete, data: { confirm: t(:delete_confirm) }) %>
+      <% end %>
+  </table>
+</div>
