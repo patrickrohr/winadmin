@@ -6,7 +6,7 @@ class League < ActiveRecord::Base
 
   private
   def check_dependencies
-    sport.league_error = I18n.t(:league_not_empty) unless teams.size == 0
+    sport.errors.add(:base, I18n.t(:league_not_empty, number: self.number)) unless teams.size == 0
     teams.size == 0
   end
 end
