@@ -1,0 +1,8 @@
+<%= render 'shared/form_errors', obj: @team %>
+<%= form_for team, builder: BootstrapFormBuilder do |f| %>
+  <%= f.bs_text_field(:name) %>
+  <%= f.bs_text_field(:display_name) %>
+  <%= f.bs_text_field(:email) %>
+  <%= f.bs_select(:league_id, League.all) %>
+  <%= f.bs_submit("SUBMIT") %>
+<% end %>

@@ -4,6 +4,7 @@ class TeamsController < ApplicationController
   end
 
   def create
+    create_action(Team, team_params)
   end
 
   def index
@@ -24,6 +25,6 @@ class TeamsController < ApplicationController
 
   private
   def team_params
-    params.require(:team).permit(:name, :display_name, :email)
+    params.require(:team).permit(:name, :display_name, :email, :sport_id, :league_id)
   end
 end

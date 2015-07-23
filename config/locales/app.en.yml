@@ -17,3 +17,4 @@ en:
   check_your_email: "An email with the new password has been sent to your email address"
   update: "Update"
   delete: "Delete"
+  league_not_empty: "league_not_empty"

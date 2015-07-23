@@ -26,6 +26,6 @@ class SportsController < ApplicationController
 
   private
   def sport_params
-    params.require(:sport).permit(:name, :number_of_sets)
+    params.require(:sport).permit(:name, :number_of_sets, :number_of_leagues)
   end
 end
