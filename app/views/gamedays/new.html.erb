@@ -1,0 +1,2 @@
+<%= render partial: 'form', locals: { gamedays: @gamedays }%>
+<%= javascript_tag("var partial = '" + j(render(partial: 'gameday')) + "'") %>

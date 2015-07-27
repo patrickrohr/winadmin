@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sports
   resources :teams
+  resources :gamedays
 
   get 'logout' => 'sessions#destroy'
   match '/help', to: 'static_pages#help', via: :get

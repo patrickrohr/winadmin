@@ -1,0 +1,6 @@
+<%= render 'shared/form_errors', obj: gameday %>
+<%= form_for gameday, builder: BootstrapFormBuilder do |f| %>
+  <%= f.bs_text_field(:date) %>
+  <%= f.bs_text_field(:location) %>
+  <%= f.bs_submit("SUBMIT") %>
+<% end %>

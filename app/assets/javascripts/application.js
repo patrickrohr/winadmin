@@ -14,4 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require bootstrap-datepicker
+//= require bootstrap-datepicker/locales/bootstrap-datepicker.de.js
 //= require_tree .
+
+// Adds array difference functionality, source: http://stackoverflow.com/questions/1187518/javascript-array-difference
+Array.prototype.diff = function(a) {
+    return this.filter(function(i) {return a.indexOf(i) < 0;});
+};
