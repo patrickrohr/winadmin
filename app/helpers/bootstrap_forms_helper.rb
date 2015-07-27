@@ -21,8 +21,20 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
   end
 
   def bs_select(method, choices = nil, options = {}, html_options = {}, &block)
-    bs_generic_field(method, options) do |opt|
-      @template.select(@object_name, method, choices, opt, add_to_css_class(html_options, 'form-control'))
+    bs_generic_field(method, html_options) do |html_opt|
+      @template.select(@object_name, method, choices, options, html_opt)
+    end
+  end
+
+  def bs_collection_select(method, collection, value_method, text_method, options = {}, html_options = {})
+    bs_generic_field(method, html_options) do |html_opt|
+      @template.collection_select(@object_name, method, collection, value_method, text_method, options, html_opt)
+    end
+  end
+
+  def bs_grouped_collection_select(method, collection, group_method, group_label_method, option_key_method, option_value_method, options = {}, html_options = {})
+    bs_generic_field(method, html_options) do |html_opt|
+      @template.grouped_collection_select(@object_name, method, collection, group_method, group_label_method, option_key_method, option_value_method, options, html_opt)
     end
   end
 

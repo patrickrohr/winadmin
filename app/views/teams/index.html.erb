@@ -1,0 +1,25 @@
+<%= render partial: 'shared/filter', locals: { obj: Sport.all, label: t(:sports_filter) } %>
+
+<% @leagues.each do |l| %>
+  <h1><%= "#{l.number}. Liga" %></h1>
+  <div class="responsive-table">
+    <table class="table table-condensed table-responsive">
+      <thead>
+        <tr>
+          <th><%= Team.human_attribute_name :name %>
+          <th><%= Team.human_attribute_name :display_name %>
+          <th><%= t :actions %>
+          <th>
+          <th>
+      <tbody>
+        <% l.teams.each do |obj| %>
+          <tr>
+            <td><%= obj.name %>
+            <td><%= obj.display_name %>
+            <td><%= link_to(t(:show), action: :show, id: obj) %>
+            <td><%= link_to(t(:update), action: :edit, id: obj) %>
+            <td><%= link_to(t(:delete), obj, method: :delete, data: { confirm: t(:delete_confirm) }) %>
+        <% end %>
+    </table>
+  </div>
+<% end %>

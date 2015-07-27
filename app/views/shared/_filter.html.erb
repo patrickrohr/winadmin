@@ -1,0 +1,6 @@
+<%= form_tag(request.original_fullpath, method: "get", class: 'form-inline', id: 'filter_form') do %>
+  <div class='form-group'>
+    <%= label_tag(:filter, label) %>
+    <%= select_tag(:filter, options_from_collection_for_select(obj, :id, :name, request[:filter]), class: 'form-control', onchange: "$('#filter_form').submit();", prompt: '...') %>
+  </div>
+<% end %>

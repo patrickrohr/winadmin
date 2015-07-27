@@ -2,6 +2,9 @@ class Sport < ActiveRecord::Base
   has_many :leagues
 
   before_validation :adjust_number_of_leagues
+  after_save :save_new_leagues
+  before_destroy :try_to_delete_leagues
+
 
 
   def number_of_leagues
@@ -17,7 +20,7 @@ class Sport < ActiveRecord::Base
     if number_of_leagues >= leagues.size
       #increase leagues accordingly
       for i in (leagues.size + 1)..number_of_leagues
-        leagues.create(number: i)
+        leagues.new(number: i)
       end
     else
       #decrease leagues accordingly
@@ -26,5 +29,17 @@ class Sport < ActiveRecord::Base
         league.destroy
       end
     end
+  end
+
+  # New leagues cannot be saved as long as the parent object (sport) is not saved
+  def save_new_leagues
+    leagues.each { |l| l.save }
+  end
+
+  # tries to delete all associated leagues before destroying a sport
+  def try_to_delete_leagues
+    self.number_of_leagues = 0
+    adjust_number_of_leagues
+    return errors.size == 0
   end
 end

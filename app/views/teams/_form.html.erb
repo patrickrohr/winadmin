@@ -3,6 +3,7 @@
   <%= f.bs_text_field(:name) %>
   <%= f.bs_text_field(:display_name) %>
   <%= f.bs_text_field(:email) %>
-  <%= f.bs_select(:league_id, League.all) %>
+  <%= f.bs_collection_select(:sport_id, Sport.order(:name), :id, :name, prompt: '') %>
+  <%= f.bs_grouped_collection_select(:league_id, Sport.order(:name), :leagues, :name, :id, :number, prompt: '') %>
   <%= f.bs_submit("SUBMIT") %>
 <% end %>

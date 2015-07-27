@@ -143,7 +143,7 @@
 			"file": "app/controllers/teams_controller.rb",
 			"settings":
 			{
-				"buffer_size": 362,
+				"buffer_size": 438,
 				"line_ending": "Unix"
 			}
 		},
@@ -156,10 +156,82 @@
 			}
 		},
 		{
+			"file": "app/views/teams/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 796,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/shared/_filter.html.erb",
+			"settings":
+			{
+				"buffer_size": 365,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/locales/app.en.yml",
+			"settings":
+			{
+				"buffer_size": 968,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/views/teams/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 296,
+				"buffer_size": 453,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/helpers/bootstrap_forms_helper.rb",
+			"settings":
+			{
+				"buffer_size": 2276,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 869,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/_navbar.html.erb",
+			"settings":
+			{
+				"buffer_size": 824,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/teams.js.coffee",
+			"settings":
+			{
+				"buffer_size": 760,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/teams/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 54,
 				"line_ending": "Windows"
 			}
 		},
@@ -172,21 +244,10 @@
 			}
 		},
 		{
-			"contents": "class Sport < ActiveRecord::Base\n  has_many :leagues\n\n  validate :league_errors?\n  attr_accessor :league_error # for league dependency errors\n\n  def number_of_leagues\n    if number_of_leagues\n    @number_of_leagues = leagues.size\n  end\n\n  def number_of_leagues=(value)\n    #check if value is smaller or bigger than number of leagues\n    value = value.to_i # TODO: validations\n    if value >= number_of_leagues\n      #increase leagues accordingly\n      for i in (number_of_leagues + 1)..value\n        leagues.create(number: i)\n      end\n    else\n      #decrease leagues accordingly\n      for i in (value + 1)..number_of_leagues\n        league = leagues.where(number: i).first\n        league.destroy\n      end\n    end\n  end\n\n  private\n  def league_errors?\n    errors.add(:base, league_error) if league_error\n    league_error = ''\n  end\nend",
 			"file": "app/models/sport.rb",
-			"file_size": 823,
-			"file_write_time": 130821304977186021,
 			"settings":
 			{
-				"buffer_size": 837,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/locales/app.en.yml",
-			"settings":
-			{
-				"buffer_size": 905,
+				"buffer_size": 731,
 				"line_ending": "Windows"
 			}
 		},
@@ -202,23 +263,7 @@
 			"file": "app/models/team.rb",
 			"settings":
 			{
-				"buffer_size": 56,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1825,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/league.rb",
-			"settings":
-			{
-				"buffer_size": 369,
+				"buffer_size": 83,
 				"line_ending": "Windows"
 			}
 		},
@@ -310,10 +355,12 @@
 	[
 		"/G/Sites/winadmin",
 		"/G/Sites/winadmin/app",
-		"/G/Sites/winadmin/app/controllers",
+		"/G/Sites/winadmin/app/assets",
+		"/G/Sites/winadmin/app/assets/javascripts",
 		"/G/Sites/winadmin/app/views",
 		"/G/Sites/winadmin/app/views/layouts",
 		"/G/Sites/winadmin/app/views/sessions",
+		"/G/Sites/winadmin/app/views/shared",
 		"/G/Sites/winadmin/app/views/sports",
 		"/G/Sites/winadmin/app/views/static_pages",
 		"/G/Sites/winadmin/app/views/teams",
@@ -322,16 +369,20 @@
 	],
 	"file_history":
 	[
+		"/G/Sites/winadmin/app/assets/javascripts/teams.js.coffee",
+		"/G/Sites/winadmin/app/models/league.rb",
+		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
+		"/G/Sites/winadmin/app/views/shared/_filter.html.erb",
+		"/G/Sites/winadmin/config/initializers/filter_parameter_logging.rb",
+		"/G/Sites/winadmin/config/locales/app.en.yml",
 		"/G/Sites/winadmin/app/controllers/sports_controller.rb",
 		"/G/Sites/winadmin/db/migrate/20150722151721_change_teams.rb",
 		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/app/views/layouts/application.html.erb",
-		"/G/Sites/winadmin/config/locales/app.en.yml",
 		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
 		"/G/Sites/winadmin/app/models/user.rb",
 		"/G/Sites/winadmin/app/views/sessions/forgot_password.html.erb",
 		"/G/Sites/winadmin/app/mailers/user_mailer.rb",
-		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
 		"/G/Sites/winadmin/app/views/sports/index.html.erb",
 		"/G/Sites/winadmin/app/views/sports/edit.html.erb",
 		"/G/Sites/winadmin/app/views/sports/new.html.erb",
@@ -369,7 +420,6 @@
 		"/G/Sites/winadmin/app/models/club.rb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
 		"/G/Sites/winadmin/app/models/game.rb",
-		"/G/Sites/winadmin/app/models/league.rb",
 		"/G/Sites/winadmin/app/models/sport.rb",
 		"/G/Sites/winadmin/Gemfile",
 		"/G/Sites/winadmin/db/migrate/20141221135141_create_users.rb",
@@ -446,10 +496,7 @@
 		"/G/Sites/stva/tmp/cache/assets/development/sass/2c911203ce71ce7fddf5383b63ec28dd5108b795/_navbar.scssc",
 		"/G/Sites/stva/tmp/cache/assets/development/sass/7bb49ac5431a895a031754df4cfd0632538fc92f/_nav-vertical-align.scssc",
 		"/G/Sites/stva/app/views/categories/new.html.erb",
-		"/G/Sites/stva/tmp/cache/assets/development/sass/2691d215c03747c607ff73939d347ebcccff5f58/bootstrap.scssc",
-		"/G/Sites/stva/app/assets/stylesheets/sessions.css.scss",
-		"/G/Sites/stva/app/controllers/sessions_controller.rb",
-		"/G/Sites/stva/db/migrate/20140817234507_add_is_company_to_reservations.rb"
+		"/G/Sites/stva/tmp/cache/assets/development/sass/2691d215c03747c607ff73939d347ebcccff5f58/bootstrap.scssc"
 	],
 	"find":
 	{
@@ -468,6 +515,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"label",
 			"sessions_path",
 			"session_path",
 			"category",
@@ -499,7 +547,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 9,
 			"sheets":
 			[
 				{
@@ -508,15 +556,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 362,
+						"buffer_size": 438,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								210,
+								210
 							]
 						],
 						"settings":
@@ -529,7 +577,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -559,24 +607,288 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/teams/_form.html.erb",
+					"file": "app/views/teams/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 296,
+						"buffer_size": 796,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								296,
-								296
+								391,
+								391
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/shared/_filter.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/locales/app.en.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								967,
+								967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/teams/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/helpers/bootstrap_forms_helper.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1507,
+								1507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 284.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								660,
+								660
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/layouts/_navbar.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								570,
+								570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/assets/javascripts/teams.js.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/teams/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
 							]
 						],
 						"settings":
@@ -591,7 +903,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 12,
 					"file": "app/views/sports/_form.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -619,20 +931,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 13,
 					"file": "app/models/sport.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 837,
+						"buffer_size": 731,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								191,
-								191
+								101,
+								101
 							]
 						],
 						"settings":
@@ -645,41 +957,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "config/locales/app.en.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 905,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								869,
-								885
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 14,
 					"file": "db/schema.rb",
 					"semi_transient": false,
 					"settings":
@@ -691,8 +973,8 @@
 						"selection":
 						[
 							[
-								2125,
-								2132
+								2084,
+								2084
 							]
 						],
 						"settings":
@@ -702,27 +984,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 334.0,
+						"translation.y": 702.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 15,
 					"file": "app/models/team.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 56,
+						"buffer_size": 83,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								52
+								79,
+								79
 							]
 						],
 						"settings":
@@ -733,69 +1015,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 340.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/models/league.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 369,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								265,
-								265
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
+					"buffer": 16,
 					"file": "app/views/sports/index.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -807,8 +1031,8 @@
 						"selection":
 						[
 							[
-								143,
-								143
+								528,
+								33
 							]
 						],
 						"settings":
@@ -821,7 +1045,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -876,19 +1100,67 @@
 		"selected_items":
 		[
 			[
+				"lau",
+				"app\\views\\layouts\\application.html.erb"
+			],
+			[
+				"bshe",
+				"app\\helpers\\bootstrap_forms_helper.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"team",
+				"app\\models\\team.rb"
+			],
+			[
+				"teac",
+				"app\\controllers\\teams_controller.rb"
+			],
+			[
+				"leag",
+				"app\\models\\league.rb"
+			],
+			[
+				"teamco",
+				"app\\controllers\\teams_controller.rb"
+			],
+			[
+				"teamin",
+				"app\\views\\teams\\index.html.erb"
+			],
+			[
+				"sch",
+				"db\\schema.rb"
+			],
+			[
+				"schema",
+				"db\\schema.rb"
+			],
+			[
+				"bsh",
+				"app\\helpers\\bootstrap_forms_helper.rb"
+			],
+			[
 				"en",
 				"config\\locales\\app.en.yml"
 			],
 			[
-				"",
-				"app\\models\\team.rb"
+				"filter",
+				"app\\views\\shared\\_filter.html.erb"
+			],
+			[
+				"rout",
+				"config\\routes.rb"
 			],
 			[
 				"leagu",
 				"app\\models\\league.rb"
 			],
 			[
-				"team",
+				"",
 				"app\\models\\team.rb"
 			],
 			[
@@ -910,10 +1182,6 @@
 			[
 				"route",
 				"config\\routes.rb"
-			],
-			[
-				"schema",
-				"db\\schema.rb"
 			],
 			[
 				"layout",
@@ -976,20 +1244,12 @@
 				"app\\controllers\\application_controller.rb"
 			],
 			[
-				"rout",
-				"config\\routes.rb"
-			],
-			[
 				"usercon",
 				"app\\controllers\\users_controller.rb"
 			],
 			[
 				"routes",
 				"config\\routes.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"appcss",
@@ -1350,42 +1610,6 @@
 			[
 				"catco",
 				"app\\controllers\\categories_controller.rb"
-			],
-			[
-				"reserc",
-				"app\\controllers\\reservations_controller.rb"
-			],
-			[
-				"migr",
-				"db\\migrate\\20140720105744_add_address_to_reservation.rb"
-			],
-			[
-				"miadd",
-				"db\\migrate\\20140720163423_add_price_to_reservation.rb"
-			],
-			[
-				"recon",
-				"app\\controllers\\reservations_controller.rb"
-			],
-			[
-				"appcon",
-				"app\\controllers\\application_controller.rb"
-			],
-			[
-				"application",
-				"app\\helpers\\application_helper.rb"
-			],
-			[
-				"data",
-				"config\\database.yml"
-			],
-			[
-				"resecon",
-				"app\\controllers\\reservations_controller.rb"
-			],
-			[
-				"resevation",
-				"app\\models\\reservation.rb"
 			]
 		],
 		"width": 0.0

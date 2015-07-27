@@ -10,7 +10,7 @@
   </div>
   <div class="navbar-collapse collapse" id="navbar-collapse-1">
     <ul class="nav navbar-nav navbar-right">
-       <%= build_top_nav([:users, :sports]) %>
+       <%= build_top_nav([:users, :sports, :teams]) %>
       <li class="<%= current_page?(controller: :static_pages, action: :help) ? 'active' : '' %>"><%= link_to(action_label_for(:static_pages, :help), help_path) %></li>
       <li><%= link_to(t(:logout), logout_path) %></li>
     </ul>
