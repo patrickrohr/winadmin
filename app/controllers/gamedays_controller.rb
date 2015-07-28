@@ -5,12 +5,15 @@ class GamedaysController < ApplicationController
   def create
     dates = params[:gamedaydate]
     locations = params[:gamedayplace]
+    league_id = params[:Team][:league_id]
+
     error = false
-    if dates.size == locations.size #TODO write validations so this does not need to be checked
+    if not dates.nil? and dates.size == locations.size #TODO write validations so this does not need to be checked
       dates.each_index do |i|
         gd = Gameday.new
         gd.date = dates[i] # TODO: check if this works, no day month mix ups
         gd.location = locations[i]
+        gd.league_id = league_id
         unless gd.save
           error = true # an error has happened with one of the gamedays, still keep going
         end

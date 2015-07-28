@@ -1,5 +1,13 @@
-<%= form_tag gamedays_path %>
-<%= hidden_field_tag(:dates) %>
-<div id="gameday-datepicker"></div>
-<div id="gameday-content"></div>
-<%= submit_tag("SUBMIT", class: 'btn btn-primary') %>
+<%= form_tag gamedays_path do %>
+  <div class="form-group form-inline">
+    <%= label_tag :sport_id %>
+    <%= collection_select(Team, :sport_id, Sport.order(:name), :id, :name, { prompt: '' }, { class: 'form-control' }) %>
+    <%= label_tag :league_id %>
+    <%= grouped_collection_select(Team, :league_id, Sport.order(:name), :leagues, :name, :id, :number, { prompt: '' }, { class: 'form-control' }) %>
+  </div>
+  <%= hidden_field_tag(:dates) %>
+  <p><%= t :choose_date %></p>
+  <div id="gameday-datepicker"></div>
+  <div id="gameday-content"></div>
+  <%= submit_tag("SUBMIT", class: 'btn btn-primary') %>
+<% end %>

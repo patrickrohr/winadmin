@@ -1,20 +1,28 @@
 <h1><%= t :gamedays_index %></h1>
 
-<div class="responsive-table">
-  <table class="table table-condensed table-responsive">
-    <thead>
-      <tr>
-        <th><%= Gameday.human_attribute_name :date %>
-        <th><%= Gameday.human_attribute_name :location %>
-        <th><%= t :actions %>
-        <th>
-    <tbody>
-      <% @gamedays.each do |obj| %>
+
+<% Sport.order(:name).each do |s| %>
+  <h3><%= s.name %></h3>
+  <div class="responsive-table">
+    <table class="table">
+      <thead>
         <tr>
-          <td><%= obj.date %>
-          <td><%= obj.location %>
-          <td><%= link_to(t(:update), action: :edit, id: obj) %>
-          <td><%= link_to(t(:delete), obj, method: :delete, data: { confirm: t(:delete_confirm) }) %>
-      <% end %>
-  </table>
-</div>
+          <th><%= t :league %>
+          <th><%= Gameday.human_attribute_name :date %>
+          <th><%= Gameday.human_attribute_name :location %>
+          <th><%= t :actions %>
+          <th>
+      <tbody>
+        <% s.leagues.order(number: :asc).each do |l| %>
+          <% l.gamedays.order(date: :asc).each do |obj| %>
+            <tr>
+              <td><%= "#{obj.league.number}. Liga" %>
+              <td><%= obj.date %>
+              <td><%= obj.location %>
+              <td><%= link_to(t(:update), action: :edit, id: obj) %>
+              <td><%= link_to(t(:delete), obj, method: :delete, data: { confirm: t(:delete_confirm) }) %>
+          <% end %>
+        <% end %>
+    </table>
+  </div>
+<% end %>

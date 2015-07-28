@@ -152,6 +152,14 @@
 			}
 		},
 		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 895,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "config/locales/app.en.yml",
 			"settings":
 			{
@@ -176,27 +184,43 @@
 			}
 		},
 		{
-			"file": "app/views/gamedays/new.html.erb",
+			"file": "app/controllers/gamedays_controller.rb",
 			"settings":
 			{
-				"buffer_size": 140,
-				"line_ending": "Windows"
+				"buffer_size": 1181,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/views/gamedays/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 184,
+				"buffer_size": 586,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/gamedays_controller.rb",
+			"file": "app/assets/javascripts/teams.js.coffee",
 			"settings":
 			{
-				"buffer_size": 1152,
+				"buffer_size": 902,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/gamedays/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 108,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/layouts/_navbar.html.erb",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -211,7 +235,7 @@
 			"file": "config/locales/en.yml",
 			"settings":
 			{
-				"buffer_size": 2234,
+				"buffer_size": 5738,
 				"line_ending": "Unix"
 			}
 		},
@@ -224,26 +248,18 @@
 			}
 		},
 		{
-			"file": "app/views/sports/edit.html.erb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 56,
-				"line_ending": "Windows"
+				"buffer_size": 1028,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/views/gamedays/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 626,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "db/schema.rb",
-			"settings":
-			{
-				"buffer_size": 2478,
+				"buffer_size": 683,
 				"line_ending": "Windows"
 			}
 		}
@@ -332,23 +348,25 @@
 		"/G/Sites/winadmin/app/controllers",
 		"/G/Sites/winadmin/app/views",
 		"/G/Sites/winadmin/app/views/gamedays",
+		"/G/Sites/winadmin/app/views/layouts",
 		"/G/Sites/winadmin/app/views/shared",
 		"/G/Sites/winadmin/app/views/sports",
 		"/G/Sites/winadmin/app/views/teams"
 	],
 	"file_history":
 	[
+		"/G/Sites/winadmin/app/models/gameday.rb",
+		"/G/Sites/winadmin/db/schema.rb",
+		"/G/Sites/winadmin/app/views/gamedays/_form.html.erb",
+		"/G/Sites/winadmin/app/views/gamedays/new.html.erb",
 		"/G/Sites/winadmin/app/views/teams/_form.html.erb",
 		"/G/Sites/winadmin/config/initializers/rails_defaults.rb",
 		"/G/Sites/winadmin/config/routes.rb",
 		"/G/Sites/winadmin/app/assets/javascripts/gamedays.js.coffee",
-		"/G/Sites/winadmin/app/views/gamedays/new.html.erb",
 		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
-		"/G/Sites/winadmin/app/views/gamedays/_form.html.erb",
 		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
 		"/G/Sites/winadmin/Gemfile",
 		"/G/Sites/winadmin/app/controllers/gamedays_controller.rb",
-		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/app/views/teams/show.html.erb",
 		"/G/Sites/winadmin/app/controllers/teams_controller.rb",
 		"/G/Sites/winadmin/app/models/team.rb",
@@ -399,7 +417,6 @@
 		"/G/Sites/winadmin/app/assets/stylesheets/layout.css.scss",
 		"/G/Sites/winadmin/app/views/users/new.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/_flash.html.erb",
-		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/app/models/club.rb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
 		"/G/Sites/winadmin/app/models/game.rb",
@@ -484,6 +501,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"time",
 			"label",
 			"sessions_path",
 			"session_path",
@@ -516,7 +534,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 14,
 			"sheets":
 			[
 				{
@@ -532,8 +550,8 @@
 						"selection":
 						[
 							[
-								185,
-								197
+								36,
+								0
 							]
 						],
 						"settings":
@@ -544,11 +562,41 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								686,
+								686
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "config/locales/app.en.yml",
 					"semi_transient": false,
 					"settings":
@@ -574,11 +622,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "app/assets/javascripts/gamedays.js.coffee",
 					"semi_transient": false,
 					"settings":
@@ -604,11 +652,11 @@
 						"translation.y": 35.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "app/assets/javascripts/application.js",
 					"semi_transient": false,
 					"settings":
@@ -632,80 +680,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/gamedays/new.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								140,
-								140
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "app/views/gamedays/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "app/controllers/gamedays_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1152,
+						"buffer_size": 1181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								887,
-								887
+								506,
+								506
 							]
 						],
 						"settings":
@@ -715,14 +707,130 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 173.0,
+						"translation.y": 11.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/gamedays/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 7,
+					"file": "app/assets/javascripts/teams.js.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 902,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/gamedays/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/layouts/_navbar.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								581,
+								581
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": "app/views/gamedays/edit.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -746,24 +854,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 11,
 					"file": "config/locales/en.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2234,
+						"buffer_size": 5738,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								652,
-								652
+								5547,
+								5547
 							]
 						],
 						"settings":
@@ -773,14 +881,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 191.0,
+						"translation.y": 3241.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 12,
 					"file": "app/views/gamedays/_form_edit.html.erb",
 					"semi_transient": false,
 					"settings":
@@ -804,52 +912,52 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "app/views/sports/edit.html.erb",
-					"semi_transient": true,
+					"buffer": 13,
+					"file": "Gemfile",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 56,
+						"buffer_size": 1028,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								0
+								396,
+								396
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 14,
 					"file": "app/views/gamedays/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 626,
+						"buffer_size": 683,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223,
-								223
+								311,
+								311
 							]
 						],
 						"settings":
@@ -859,40 +967,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "db/schema.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2478,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 80.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -947,12 +1025,20 @@
 		"selected_items":
 		[
 			[
-				"en",
-				"config\\locales\\en.yml"
+				"gameday",
+				"app\\models\\gameday.rb"
 			],
 			[
 				"schema",
 				"db\\schema.rb"
+			],
+			[
+				"en",
+				"config\\locales\\en.yml"
+			],
+			[
+				"gemfil",
+				"Gemfile"
 			],
 			[
 				"rou",
@@ -1263,10 +1349,6 @@
 				"config\\locales\\app.de.yml"
 			],
 			[
-				"gemfil",
-				"Gemfile"
-			],
-			[
 				"reservationnew",
 				"app\\views\\reservations\\new.html.erb"
 			],
@@ -1453,10 +1535,6 @@
 			[
 				"reservat",
 				"app\\models\\reservation.rb"
-			],
-			[
-				"appl",
-				"config\\application.rb"
 			]
 		],
 		"width": 0.0
