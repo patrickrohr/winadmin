@@ -1,6 +1,7 @@
 class League < ActiveRecord::Base
   has_many :teams
   has_many :gamedays
+  has_many :games
   belongs_to :sport
 
   before_destroy :check_dependencies # TODO: check if this works, should prevent the league from being destroyed as long as it has teams associated with it.

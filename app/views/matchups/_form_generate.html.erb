@@ -1,0 +1,11 @@
+<%= form_tag({}, {class: "form-inline"}) do %>
+  <div class="form-group">
+    <h4><%= "#{t(:matchups_generate)}: " %></h4>
+    <%= submit_tag t(:generate), class: "btn btn-default" %>
+    <div class="checkbox checkbox-inline">
+      <%= check_box_tag :reverse %>
+      <%= label_tag :reverse, t(:matchups_generate_reverse) %>
+    </div>
+      <%= hidden_field :sport, :id, value: request[:filter] %>
+  </div>
+<% end %>

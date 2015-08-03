@@ -24,3 +24,7 @@ en:
   team_show: "Team Details"
   place: "Spielort"
   choose_date: "Please choose one or more gameday dates:"
+  matchups_generate: "Generate Matchups"
+  matchups_generate_reverse: "Rueckrunde"
+  generate: "Generate"
+  submit: "Submit"

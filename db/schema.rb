@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722151721) do
+ActiveRecord::Schema.define(version: 20150803123646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 20150722151721) do
     t.boolean  "tie"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "league_id"
+    t.integer  "gameday_id"
   end
 
   create_table "gamesets", force: true do |t|

@@ -163,7 +163,7 @@
 			"file": "config/locales/app.en.yml",
 			"settings":
 			{
-				"buffer_size": 1031,
+				"buffer_size": 1089,
 				"line_ending": "Windows"
 			}
 		},
@@ -187,7 +187,7 @@
 			"file": "app/controllers/gamedays_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1181,
+				"buffer_size": 1200,
 				"line_ending": "Unix"
 			}
 		},
@@ -195,7 +195,7 @@
 			"file": "app/views/gamedays/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 586,
+				"buffer_size": 617,
 				"line_ending": "Windows"
 			}
 		},
@@ -259,7 +259,31 @@
 			"file": "app/views/gamedays/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 683,
+				"buffer_size": 894,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/gameday.rb",
+			"settings":
+			{
+				"buffer_size": 59,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/league.rb",
+			"settings":
+			{
+				"buffer_size": 415,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 2478,
 				"line_ending": "Windows"
 			}
 		}
@@ -346,6 +370,7 @@
 		"/G/Sites/winadmin/app/assets",
 		"/G/Sites/winadmin/app/assets/javascripts",
 		"/G/Sites/winadmin/app/controllers",
+		"/G/Sites/winadmin/app/models",
 		"/G/Sites/winadmin/app/views",
 		"/G/Sites/winadmin/app/views/gamedays",
 		"/G/Sites/winadmin/app/views/layouts",
@@ -355,6 +380,7 @@
 	],
 	"file_history":
 	[
+		"/G/Sites/winadmin/config/initializers/inflections.rb",
 		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/app/views/gamedays/_form.html.erb",
@@ -481,8 +507,7 @@
 		"/G/Sites/stva/app/mailers/user_mailer.rb",
 		"/G/Sites/stva/db/migrate/20140720105744_add_address_to_reservation.rb",
 		"/G/Sites/stva/config/initializers/inflections.rb",
-		"/G/Sites/stva/app/helpers/reservations_helper.rb",
-		"/G/Sites/stva/app/assets/stylesheets/reservations.css.scss"
+		"/G/Sites/stva/app/helpers/reservations_helper.rb"
 	],
 	"find":
 	{
@@ -534,7 +559,7 @@
 	"groups":
 	[
 		{
-			"selected": 14,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -551,7 +576,7 @@
 						[
 							[
 								36,
-								0
+								36
 							]
 						],
 						"settings":
@@ -562,7 +587,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -592,7 +617,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -601,15 +626,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1031,
+						"buffer_size": 1089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1030,
-								1030
+								1088,
+								1088
 							]
 						],
 						"settings":
@@ -622,7 +647,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -652,7 +677,7 @@
 						"translation.y": 35.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -680,7 +705,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -689,15 +714,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1181,
+						"buffer_size": 1200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								506,
-								506
+								237,
+								237
 							]
 						],
 						"settings":
@@ -707,10 +732,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -719,26 +744,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 586,
+						"buffer_size": 617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								252,
-								252
+								471,
+								471
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -768,7 +795,7 @@
 						"translation.y": 10.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -796,7 +823,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -826,7 +853,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -854,7 +881,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
@@ -881,10 +908,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3241.0,
+						"translation.y": 226.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -900,8 +927,8 @@
 						"selection":
 						[
 							[
-								178,
-								178
+								110,
+								110
 							]
 						],
 						"settings":
@@ -909,10 +936,10 @@
 							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 10.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -940,7 +967,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -949,15 +976,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 683,
+						"buffer_size": 894,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								311,
-								311
+								490,
+								490
 							]
 						],
 						"settings":
@@ -970,7 +997,93 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/models/gameday.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/models/league.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "db/schema.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1146,
+								1155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1025,16 +1138,36 @@
 		"selected_items":
 		[
 			[
-				"gameday",
-				"app\\models\\gameday.rb"
+				"en",
+				"config\\locales\\app.en.yml"
+			],
+			[
+				"",
+				"app\\views\\gamedays\\index.html.erb"
+			],
+			[
+				"i",
+				"config\\initializers\\inflections.rb"
+			],
+			[
+				"leag",
+				"app\\models\\league.rb"
+			],
+			[
+				"gamedinde",
+				"app\\views\\gamedays\\index.html.erb"
 			],
 			[
 				"schema",
 				"db\\schema.rb"
 			],
 			[
-				"en",
-				"config\\locales\\en.yml"
+				"gam",
+				"app\\models\\gameday.rb"
+			],
+			[
+				"gameday",
+				"app\\models\\gameday.rb"
 			],
 			[
 				"gemfil",
@@ -1093,10 +1226,6 @@
 				"app\\models\\team.rb"
 			],
 			[
-				"leag",
-				"app\\models\\league.rb"
-			],
-			[
 				"lau",
 				"app\\views\\layouts\\application.html.erb"
 			],
@@ -1127,10 +1256,6 @@
 			[
 				"leagu",
 				"app\\models\\league.rb"
-			],
-			[
-				"",
-				"app\\models\\team.rb"
 			],
 			[
 				"league",
@@ -1523,18 +1648,6 @@
 			[
 				"mai",
 				"app\\mailers\\user_mailer.rb"
-			],
-			[
-				"applhelper",
-				"app\\helpers\\application_helper.rb"
-			],
-			[
-				"applic",
-				"config\\application.rb"
-			],
-			[
-				"reservat",
-				"app\\models\\reservation.rb"
 			]
 		],
 		"width": 0.0
