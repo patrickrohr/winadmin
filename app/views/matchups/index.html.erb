@@ -8,7 +8,7 @@
 <%= form_tag mathups_save_path do %>
   <% @leagues.each do |l| %>
     <h1><%= "#{l.number}. Liga" %></h1>
-      <% l.games.joins(:gameday).order('gamedays.date').each do |obj| %>
+      <% l.games.join_left_gamedays.each do |obj| %>
         <div class="well well-sm">
           <div class="row">
             <div class="col-xs-9 col-md-10"><strong><%= "#{obj.team_1.name} : #{obj.team_2.name}" %></strong></div>
