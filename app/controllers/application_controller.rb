@@ -62,6 +62,20 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  # checks if there's a sport id in the session if it's nil
+  def sport_id_filter_default(sport_id)
+    if sport_id.nil?
+      if user_session.has_key?(:filter_sport_id)# check if there's an id in session
+        sport_id = user_session.get(:filter_sport_id)
+      else
+        sport_id = Sport.order(:name).first
+      end
+    end
+    Sport.selected = sport_id
+    user_session.set(:filter_sport_id, sport_id)
+    sport_id
+  end
+
 
   private
   def check_for_rights(*groups) # :admin, :veranstalter, :redaktor

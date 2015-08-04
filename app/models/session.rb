@@ -51,6 +51,20 @@ class Session
   end
 
 
+  def set(key, value)
+    return false if key.to_sym == :user_id
+    @session[key.to_sym] = value
+  end
+
+  def get(key)
+    @session[key]
+  end
+
+  def has_key?(key)
+    @session.has_key? key
+  end
+
+
   private
   def save
     @session[:user_id] = self.user.id

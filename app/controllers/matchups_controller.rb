@@ -61,7 +61,8 @@ class MatchupsController < ApplicationController
   end
 
   def index
-    @leagues = League.where(sport_id: request[:filter]).order(number: :asc)
+    sport_id = sport_id_filter_default request[:filter]
+    @leagues = League.where(sport_id: sport_id).order(number: :asc)
   end
 
   def destroy

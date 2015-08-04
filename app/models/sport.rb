@@ -5,7 +5,9 @@ class Sport < ActiveRecord::Base
   after_save :save_new_leagues
   before_destroy :try_to_delete_leagues
 
-
+  class << self
+    attr_accessor :selected # for sport filter drop down
+  end
 
   def number_of_leagues
     @number_of_leagues ||= leagues.size
