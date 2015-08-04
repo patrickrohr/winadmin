@@ -34,9 +34,9 @@ class MatchupsController < ApplicationController
       end
     end
     unless error
-      redirect_to({ action: :index, filter: sport_id}, { success: I18n.t(:object_created)})
+      redirect_to({ action: :index, filter: sport_id}, { success: t(:object_created)})
     else
-      raise
+      redirect_to({ action: :index, filter: sport_id }, alert: t(:object_create_failed))
     end
   end
 

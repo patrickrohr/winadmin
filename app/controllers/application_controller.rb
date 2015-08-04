@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   add_flash_types :success
+  helper_method :has_rights, :user_is
 
   attr_accessor :user_session
   before_filter :load_user_session
@@ -17,7 +18,10 @@ class ApplicationController < ActionController::Base
   end
 
   def user_is(group)
-    user_session.rights_group.symbol == group.to_sym
+    unless self.user_session.user.nil?
+      return self.user_session.user.rights_group.symbol == group.to_sym
+    end
+    return false
   end
 
 

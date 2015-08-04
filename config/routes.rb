@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   resources :teams
   resources :gamedays
   resources :matchups
+  resources :results
 
   post 'matchups/save', to: 'matchups#save', as: :mathups_save
+  post 'results/create', to: 'results#collection_create', as: :results_create
 
   get 'logout' => 'sessions#destroy'
   match '/help', to: 'static_pages#help', via: :get
