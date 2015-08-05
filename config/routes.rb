@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :results
 
   post 'matchups/save', to: 'matchups#save', as: :mathups_save
+  get 'matchups/:id/reverse', to: 'matchups#reverse', as: :matchup_reverse
   post 'results/create', to: 'results#collection_create', as: :results_create
 
   get 'logout' => 'sessions#destroy'

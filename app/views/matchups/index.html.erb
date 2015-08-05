@@ -7,12 +7,24 @@
 
 <%= form_tag mathups_save_path do %>
   <% @leagues.each do |l| %>
-    <h1><%= "#{l.number}. Liga" %></h1>
+    <h1><%= "#{l.number}. Liga" %>
+      <%= submit_tag t(:submit), class: "btn btn-primary" %>
+    </h1>
       <% l.games.join_left_gamedays.each do |obj| %>
         <div class="well well-sm">
           <div class="row">
-            <div class="col-xs-9 col-md-10"><strong><%= "#{obj.team_1.name} : #{obj.team_2.name}" %></strong></div>
-            <div class="col-xs-3 col-md-2"><%= link_to(t(:delete), matchup_path(obj), method: :delete, data: { confirm: t(:delete_confirm) }) %></div>
+            <div class="col-xs-8 col-md-9 form-inline">
+              <%= hidden_field_tag "order[#{obj.id}]", obj.order %>
+              (<span id="<%= "order_tag_#{obj.id}" %>"><%= obj.order %></span>)
+              <strong><%= "#{obj.team_1.name} : #{obj.team_2.name}" %></strong>
+            </div>
+            <!--<div class="col-xs-4 col-md-3 form-inline text-right">
+              <%= text_field_tag "order[#{obj.id}]", obj.order, class: "form-control input-sm" %>
+            </div>-->
+            <div class="col-xs-4 col-md-3 text-right">
+              <%= link_to(t(:reverse), matchup_reverse_path(obj)) %>
+              <%= link_to(t(:delete), matchup_path(obj), method: :delete, data: { confirm: t(:delete_confirm) }) %>
+            </div>
           </div>
           <div class="row">
             <% l.gamedays.order(:date).each do |gd| %>
@@ -28,5 +40,4 @@
       <% end %>
     <% end %>
   <%= hidden_field :sport, :id, value: request[:filter] %>
-  <%= submit_tag t(:submit), class: "btn btn-primary" %>
 <% end %>

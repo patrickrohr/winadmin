@@ -6,6 +6,10 @@ class League < ActiveRecord::Base
 
   before_destroy :check_dependencies # TODO: check if this works, should prevent the league from being destroyed as long as it has teams associated with it.
 
+  def display_name
+    "#{number}. Liga"
+  end
+
   private
   def check_dependencies
     sport.errors.add(:base, I18n.t(:league_not_empty, number: self.number)) unless teams.size == 0

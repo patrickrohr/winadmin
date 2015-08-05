@@ -33,7 +33,7 @@ class Game < ActiveRecord::Base
   end
 
   def self.join_left_gamedays
-    self.joins('LEFT JOIN gamedays ON games.gameday_id = gamedays.id').order('gamedays.date')
+    self.joins('LEFT JOIN gamedays ON games.gameday_id = gamedays.id').order('gamedays.date, games.order')
   end
 
   def self.join_gamedays
