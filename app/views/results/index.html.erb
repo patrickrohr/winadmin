@@ -2,11 +2,31 @@
 
 <%= form_tag results_create_path do %>
   <% @leagues.each do |l| %>
-    <h1><%= "#{l.number}. Liga" %></h1>
+    <h1>
+      <%= "#{l.number}. Liga" %>
+      <%= submit_tag t(:submit), class: "btn btn-primary" %>
+    </h1>
     <% l.games.join_gamedays.each do |obj| %>
       <div class="well well-sm">
         <div class="row">
-          <div class="col-xs-12 col-md-6"><strong><%= "#{obj.team_1.name} : #{obj.team_2.name}" %></strong></div>
+          <div class="col-xs-12 col-md-6">
+            <%= l obj.gameday.date, format: :short %>:
+            <% if obj.team_is_winner?(obj.team_1_id) %>
+              <strong>
+            <% end %>
+            <%= "#{obj.team_1.name}" %>
+            <% if obj.team_is_winner?(obj.team_1_id) %>
+              </strong>
+            <% end %>
+             : 
+            <% if obj.team_is_winner?(obj.team_2_id) %>
+              <strong>
+            <% end %>
+            <%= "#{obj.team_2.name}" %>
+            <% if obj.team_is_winner?(obj.team_2_id) %>
+              </strong>
+            <% end %>
+          </div>
           <div class="col-xs-12 col-md-6">
             <%= render partial: 'form', locals: { game: obj } %>
           </div>
@@ -14,6 +34,4 @@
       </div>
     <% end %>
   <% end %>
-  <%= hidden_field :sport, :id, value: request[:filter] %>
-  <%= submit_tag t(:submit), class: "btn btn-primary" %>
 <% end %>

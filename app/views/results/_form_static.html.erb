@@ -1,0 +1,7 @@
+<% for i in 1..(game.league.sport.number_of_sets) %>
+  <% if not game.gamesets.where(number: i).first.points_team_1.nil? and not game.gamesets.where(number: i).first.points_team_2.nil? %>
+    (<%= game.gamesets.where(number: i).first.points_team_1 %>
+    <%= " : " %>
+    <%= game.gamesets.where(number: i).first.points_team_2 %>) 
+  <% end %>
+<% end %>

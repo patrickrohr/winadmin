@@ -13,6 +13,14 @@ class Game < ActiveRecord::Base
     @team_2 ||= Team.find(team_2_id)
   end
 
+  def team_is_winner?(team_id)
+    return team_id == winner_id
+  end
+
+  def tie?
+    return tie || false
+  end
+
   def create_gamesets
     for i in 1..(league.sport.number_of_sets)
       gamesets.create(number: i)
@@ -22,13 +30,26 @@ class Game < ActiveRecord::Base
   def self.add_results(scores)
     scores.each do |game_id, sets|
       game = find game_id
-        sets.each do |set_number, points|
-          gs = game.gamesets.where(number: set_number).first
-          next if gs.nil?
-          gs.points_team_1 = points[0]
-          gs.points_team_2 = points[1]
-          gs.save
+      team_1_sets = 0
+      team_2_sets = 0
+      sets.each do |set_number, points|
+        gs = game.gamesets.where(number: set_number).first
+        next if gs.nil?
+        gs.update_attributes(points_team_1: points[0], points_team_2: points[1])
+        if points[0] > points[1]
+          team_1_sets += 1
+        elsif points [0] < points[1]
+          team_2_sets += 1
         end
+      end
+      # set winner id and tie for game, most won sets wins, go team
+      if team_1_sets > team_2_sets
+        game.update_attributes(winner_id: game.team_1_id, tie: false)
+      elsif team_1_sets < team_2_sets
+        game.update_attributes(winner_id: game.team_1_id, tie: false)
+      else
+        game.update_attributes(tie: true)
+      end 
     end
   end
 
@@ -37,6 +58,15 @@ class Game < ActiveRecord::Base
   end
 
   def self.join_gamedays
-    self.joins(:gameday).order('gamedays.date')
+    self.joins(:gameday).order('gamedays.date, games.order')
+  end
+
+  # joins gamedays table and checks rights, non admins will only be able to see 
+  def self.join_gamedays
+    self.joins(:gameday).order('gamedays.date, games.order')
+  end
+
+  def gameset_team_points(set_number, team_number)
+    gamesets.where(number: i).first.send("points_team_#{team_number}".to_sym)
   end
 end

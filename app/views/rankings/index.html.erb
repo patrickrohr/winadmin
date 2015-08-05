@@ -1,0 +1,26 @@
+<%= render partial: 'shared/filter', locals: { obj: Sport.all, label: t(:sports_filter) } %>
+<p>
+  <%= button_to t(:rankings_generate), rankings_path, method: :post, class: "btn btn-primary" %>
+</p>
+
+<% @leagues.each do |l| %>
+  <h1><%= "#{l.number}. Liga" %></h1>
+  <div class="responsive-table">
+    <table class="table table-condensed table-responsive">
+      <thead>
+        <tr>
+          <th>Rang
+          <th><%= Team.human_attribute_name :name %>
+          <th><%= Team.human_attribute_name :points %>
+          <th>Anzahl Spiele
+      <tbody>
+        <% l.teams.order(points: :desc).each_with_index do |team, i| %>
+          <tr>
+            <td><%= i + 1 %>
+            <td><%= team.display_name %>
+            <td><%= team.points %>
+            <td><%= team.game_count %>
+        <% end %>
+    </table>
+  </div>
+<% end %>

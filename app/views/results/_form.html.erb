@@ -1,15 +1,5 @@
 <% if user_is(:admin) or (Date.yesterday() - game.gameday.date < 1) %>
-  <% for i in 1..(game.league.sport.number_of_sets) %>
-    <%= text_field_tag "score[#{game.id}][#{i}][]", game.gamesets.where(number: i).first.points_team_1 %>
-    <%= " : " %>
-    <%= text_field_tag "score[#{game.id}][#{i}][]", game.gamesets.where(number: i).first.points_team_2 %>
-  <% end %>
+  <%= render partial: "form_editable", locals: { game: game }%>
 <% else %>
-  <% for i in 1..(game.league.sport.number_of_sets) %>
-    <div class="">
-      <%= game.gamesets.where(number: i).first.points_team_1 %>
-      <%= " : " %>
-      <%= game.gamesets.where(number: i).first.points_team_2 %>
-    </div>
-  <% end %>
+  <%= render partial: "form_static", locals: { game: game }%>
 <% end %>

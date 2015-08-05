@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :gamedays
   resources :matchups
   resources :results
+  resources :rankings
 
   post 'matchups/save', to: 'matchups#save', as: :mathups_save
   get 'matchups/:id/reverse', to: 'matchups#reverse', as: :matchup_reverse

@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+  POINTS_W = 3 # points for winning
+  POINTS_T = 1 # points for tie
+  
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception

@@ -6,9 +6,8 @@ class ResultsController < ApplicationController
   end
 
   def collection_create
-    sport_id = params[:sport][:id]
     Game.add_results(params[:score])
-    redirect_to({ action: :index, filter: sport_id}, { success: t(:object_updated)})
+    redirect_to results_path, success: t(:object_updated)
   end
 
   def index

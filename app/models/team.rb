@@ -18,4 +18,8 @@ class Team < ActiveRecord::Base
       nil
     end
   end
+
+  def game_count
+    Game.joins(:gameday).where('gamedays.date<=?', Date.today).where('games.team_1_id=? OR games.team_2_id=?', id, id).size
+  end
 end

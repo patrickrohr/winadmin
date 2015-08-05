@@ -30,6 +30,7 @@ en:
     formats:
       default: "%d.%m.%Y"
       short: "%e. %b"
+      shorter: "%e.%m"
       long: "%e. %B %Y"
       only_day: "%e"
 

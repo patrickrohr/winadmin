@@ -1,0 +1,13 @@
+<% for i in 1..(game.league.sport.number_of_sets) %>
+  <div class="row">
+    <div class="col-md-5 col-xs-5">
+      <%= text_field_tag "score[#{game.id}][#{i}][]", game.gamesets.where(number: i).first.points_team_1, class: "form-control input-sm" %>
+    </div>
+    <div class="col-md-1 col-xs-1 text-center">
+       : 
+    </div>
+    <div class="col-md-5 col-xs-5">
+      <%= text_field_tag "score[#{game.id}][#{i}][]", game.gamesets.where(number: i).first.points_team_2, class: "form-control input-sm" %>
+    </div>
+  </div>
+<% end %>
