@@ -33,7 +33,9 @@ class Game < ActiveRecord::Base
       team_1_sets = 0
       team_2_sets = 0
       sets.each do |set_number, points|
-        gs = game.gamesets.where(number: set_number).first
+        points[0] = points[0].to_i
+        points[1] = points[1].to_i
+        gs = game.gamesets.where(number: set_number).first #returns gameset
         next if gs.nil?
         gs.update_attributes(points_team_1: points[0], points_team_2: points[1])
         if points[0] > points[1]
@@ -47,7 +49,6 @@ class Game < ActiveRecord::Base
       end
 
       next if (team_1_sets + team_2_sets) == 0 #skips over no result games
-
       # set winner id and tie for game, most won sets wins, go team
       if team_1_sets > team_2_sets
         game.update_attributes(winner_id: game.team_1_id, tie: false)
