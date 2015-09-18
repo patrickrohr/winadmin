@@ -2,6 +2,8 @@ class Sport < ActiveRecord::Base
   has_many :leagues
 
   before_validation :adjust_number_of_leagues
+  validates :name, presence: true
+  validates :number_of_sets, numericality: { only_integer: true }, presence: true
   after_save :save_new_leagues
   before_destroy :try_to_delete_leagues
 
