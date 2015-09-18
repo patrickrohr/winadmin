@@ -16,7 +16,7 @@
             <div class="col-xs-8 col-md-9 form-inline">
               <%= hidden_field_tag "order[#{obj.id}]", obj.order %>
               (<span id="<%= "order_tag_#{obj.id}" %>"><%= obj.order %></span>)
-              <strong><%= "#{obj.team_1.name} : #{obj.team_2.name}" %></strong>
+              <strong><%= "#{obj.team_1.display_name} : #{obj.team_2.display_name}" %></strong>
             </div>
             <!--<div class="col-xs-4 col-md-3 form-inline text-right">
               <%= text_field_tag "order[#{obj.id}]", obj.order, class: "form-control input-sm" %>

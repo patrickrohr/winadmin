@@ -40,16 +40,22 @@ class Game < ActiveRecord::Base
           team_1_sets += 1
         elsif points [0] < points[1]
           team_2_sets += 1
+        elsif points[0] == points[1] and points[0] != "" #makes sure that games without entered results dont show up in rankings
+          team_1_sets += 1
+          team_2_sets += 1
         end
       end
+
+      next if (team_1_sets + team_2_sets) == 0 #skips over no result games
+
       # set winner id and tie for game, most won sets wins, go team
       if team_1_sets > team_2_sets
         game.update_attributes(winner_id: game.team_1_id, tie: false)
       elsif team_1_sets < team_2_sets
-        game.update_attributes(winner_id: game.team_1_id, tie: false)
+        game.update_attributes(winner_id: game.team_2_id, tie: false)
       else
-        game.update_attributes(tie: true)
-      end 
+        game.update_attributes(tie: true, winner_id: nil)
+      end
     end
   end
 
