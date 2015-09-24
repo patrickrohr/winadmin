@@ -28,7 +28,7 @@ Array::diff = (arr) ->
 
 
 class DateSelector
-  constructor: (@datepickerId) ->
+  constructor: (datepickerId) ->
     id = "\##{datepickerId}"
     dp = $(id).datepicker()
     dp.on 'changeDate', @change
