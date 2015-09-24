@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-  before_filter :redirect, :only => [:new, :create]
 
   def new
     # Is defined in application_controller

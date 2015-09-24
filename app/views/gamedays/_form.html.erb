@@ -1,13 +1,20 @@
-<%= form_tag gamedays_path do %>
+  <%= render 'shared/form_errors', obj: @gameday_set %><%= form_for @gameday_set do |f| %>
   <div class="form-group form-inline">
     <%= label_tag :sport_id %>
-    <%= collection_select(Team, :sport_id, Sport.order(:name), :id, :name, { prompt: '' }, { class: 'form-control' }) %>
+    <%= f.collection_select(:sport_id, Sport.order(:name), :id, :name, { prompt: '' }, { class: 'form-control', id: 'team_sport_id' }) %>
     <%= label_tag :league_id %>
-    <%= grouped_collection_select(Team, :league_id, Sport.order(:name), :leagues, :name, :id, :number, { prompt: '' }, { class: 'form-control' }) %>
+    <%= f.grouped_collection_select(:league_id, Sport.order(:name), :leagues, :name, :id, :number, { prompt: '' }, { class: 'form-control', id: 'team_league_id' }) %>
   </div>
-  <%= hidden_field_tag(:dates) %>
-  <p><%= t :choose_date %></p>
   <div id="gameday-datepicker"></div>
-  <div id="gameday-content"></div>
-  <%= submit_tag("SUBMIT", class: 'btn btn-primary') %>
+  <div id="gameday-set">
+    <%= f.fields_for :gamedays do |gameday| %>
+      <div class="form-group form-inline" id="<%= (gameday.object.date.to_time.to_i * 1000) unless gameday.object.date.nil? %>">
+        <%= gameday.text_field :date, class: 'form-control', name: 'gameday_set[gamedays_attributes][][date]' %>
+        <%= gameday.label :location, "Spielort" %>
+        <%= gameday.text_field :location, class: 'form-control', name: 'gameday_set[gamedays_attributes][][location]' %>
+        <%= gameday.hidden_field :league_id, name: 'gameday_set[gamedays_attributes][][league_id]' %>
+      </div>
+    <% end %>
+  </div>
+  <%= submit_tag(t(:submit), class: 'btn btn-primary') %>
 <% end %>

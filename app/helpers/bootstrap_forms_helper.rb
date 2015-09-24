@@ -62,3 +62,17 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 end
+
+
+class BootstrapFormBuilder2 < ActionView::Helpers::FormBuilder
+  def text_field(method, options = {})
+    options = add_to_css_class options, 'form-control'
+    label_for(*args)
+    super
+  end
+
+  def add_to_css_class(options, attributes)
+    options[:class] = [options[:class], attributes].join(' ')
+    options
+  end
+end

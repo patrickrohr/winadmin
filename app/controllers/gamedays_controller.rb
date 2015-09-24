@@ -1,30 +1,16 @@
 class GamedaysController < ApplicationController
+
   def new
+    @gameday_set = GamedaySet.new
   end
 
-  def create
-    dates = params[:gamedaydate]
-    locations = params[:gamedayplace]
-    league_id = params[:Team][:league_id]
-
-    error = false
-    if not dates.nil? and dates.size == locations.size #TODO write validations so this does not need to be checked
-      dates.each_index do |i|
-        gd = Gameday.new
-        gd.date = dates[i] # TODO: check if this works, no day month mix ups
-        gd.location = locations[i]
-        gd.league_id = league_id
-        unless gd.save
-          error = true # an error has happened with one of the gamedays, still keep going
-        end
-      end
-    else
-      error = true
-    end
-    if error
-      redirect_to({ action: :index }, alert: t(:object_create_failed))
-    else
+  def create_many
+    @gameday_set = GamedaySet.new(gamedayset_params)
+    if @gameday_set.save
       redirect_to({ action: :index }, success: t(:object_created))
+    else
+      flash.now.alert = t(:object_create_failed)
+      render :new
     end
   end
 
@@ -48,5 +34,9 @@ class GamedaysController < ApplicationController
   private
   def gameday_params
     params.require(:gameday).permit(:date, :location)
+  end
+
+  def gamedayset_params
+    params.require(:gameday_set).permit(:sport_id, :league_id, gamedays_attributes: [:date, :location, :league_id])
   end
 end

@@ -15,6 +15,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-datepicker-rails'
 gem 'delocalize'
 
+# https://github.com/leshill/handlebars_assets
+gem 'handlebars_assets'
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 

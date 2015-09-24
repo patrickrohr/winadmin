@@ -49,6 +49,11 @@ GEM
       rails (>= 3.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    handlebars_assets (0.20.2)
+      execjs (~> 2.0)
+      multi_json (~> 1.0)
+      sprockets (>= 2.0.0, < 4.0)
+      tilt (~> 1.2)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.6)
@@ -143,6 +148,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 4.0.0)
   delocalize
+  handlebars_assets
   jbuilder (~> 2.0)
   jquery-rails
   meta_request

@@ -10,18 +10,20 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require handlebars.runtime
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.de.js
+//= require_tree ./templates
 //= require_tree .
 
 // Adds array difference functionality, source: http://stackoverflow.com/questions/1187518/javascript-array-difference
-Array.prototype.diff = function(a) {
-    return this.filter(function(i) {return a.indexOf(i) < 0;});
-};
+//Array.prototype.diff = function(a) {
+//    return this.filter(function(i) {return a.indexOf(i) < 0;});
+//};
 
 // Deletes empty values in array, source: http://stackoverflow.com/questions/281264/remove-empty-elements-from-an-array-in-javascript
 Array.prototype.clean = function(deleteValue) {

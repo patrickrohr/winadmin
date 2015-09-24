@@ -1,4 +1,5 @@
 class MatchupsController < ApplicationController
+
   def new
   end
 

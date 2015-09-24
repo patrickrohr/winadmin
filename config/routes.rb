@@ -5,16 +5,19 @@ Rails.application.routes.draw do
   resources :users
   resources :sports
   resources :teams
-  resources :gamedays
+  resources :gamedays, except: [:create]
   resources :matchups
   resources :results
   resources :rankings
+
+  post 'gamedays', as: :gameday_sets, to: 'gamedays#create_many'
 
   post 'matchups/save', to: 'matchups#save', as: :mathups_save
   get 'matchups/:id/reverse', to: 'matchups#reverse', as: :matchup_reverse
   post 'results/create', to: 'results#collection_create', as: :results_create
 
   get 'logout' => 'sessions#destroy'
+  get 'login' => 'sessions#new', via: :get
   match '/help', to: 'static_pages#help', via: :get
 
   resources :sessions do

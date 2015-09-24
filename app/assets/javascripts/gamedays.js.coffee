@@ -9,28 +9,57 @@ dp.disableTouchKeyboard = true;
 dp.language = 'de';
 dp.todayHighlight = true;
 
-dates_old = []
 
-$(document).on 'page:change', ->
-  $('#gameday-datepicker').datepicker().on 'changeDate', (e) ->
-    $('#dates').val(e.format())
-    dates_new = e.dates.map (x) ->
-      if x isnt undefined
-        return x.valueOf()
-    console.debug('new: ' + dates_new)
-    console.debug('old: ' + dates_old)
-    if dates_new.length > dates_old.length # New date added
-      addGameDay(e.date)
+$(document).on 'page:change', -> new DateSelector 'gameday-datepicker'
+
+
+Array::valueOfByElement = () ->
+  @.map (element) ->
+    if element instanceof Date
+      element.valueOf()
     else
-      date = dates_old.diff(dates_new)
-      removeGameDay(date[0])
+      element.toString()
 
-    dates_old = dates_new
+Array::diff = (arr) ->
+  arr = arr.valueOfByElement()
+  @.filter (element) ->
+    arr.indexOf(element.valueOf()) < 0
 
-addGameDay = (date) ->
-  id = date.valueOf()
-  $('#gameday-content').append(partial).children().last().attr('id', id)
-  $(".gamedaydate").last().val(date.toLocaleDateString("de-CH"))
 
-removeGameDay = (dateOf) ->
-  $('#' + dateOf).remove()
+
+class DateSelector
+  constructor: (@datepickerId) ->
+    id = "\##{datepickerId}"
+    dp = $(id).datepicker()
+    dp.on 'changeDate', @change
+    @dropdown = $('#team_league_id')
+    @dropdown.on 'change', @selectLeague
+    $('#team_sport_id').on 'change', @selectLeague
+    @dates = []
+
+  change: (event) => # decides if date has been added or removed
+    new_dates = event.dates
+    if new_dates.length > @dates.length
+      @add(new_dates.diff(@dates)[0])
+    else if new_dates.length < @dates.length
+      @remove(@dates.diff(new_dates)[0])
+    @dates = new_dates # maybe consider updating @dates with new_dates before calling add/remove
+
+  add: (date) ->
+    date = { obj: date, add: true }
+    @render(date)
+
+  remove: (date) ->
+    date = { obj: date, add: false }
+    @render(date)
+
+  render: (date) ->
+    id = date.obj.valueOf()
+    if date.add
+      tmp = JST['gamedays/gameday'](id: id, league_id: @dropdown.val(), date: date.obj.toLocaleDateString("de-CH"))
+      $('#gameday-set').append(tmp)
+    else
+      $("[id='#{id}']").remove()
+
+  selectLeague: (event) => # sets league_id straight in every leagues hidden field, way easier to insert data
+    $('[name="gameday_set[gamedays_attributes][][league_id]"]').val(@dropdown.val())

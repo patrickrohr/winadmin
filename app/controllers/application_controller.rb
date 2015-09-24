@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base# Prevent CSRF attacks by ra
   end
 
   def has_rights(*groups)
-    return true if check_for_rights *groups
+    check_for_rights *groups
   end
 
   def user_is(group)
@@ -21,6 +21,12 @@ class ApplicationController < ActionController::Base# Prevent CSRF attacks by ra
       return self.user_session.user.rights_group.symbol == group.to_sym
     end
     return false
+  end
+
+  def self.grant_access_to(*groups)
+    unless check_for_rights *groups
+      redirect_to login_path
+    end
   end
 
 
