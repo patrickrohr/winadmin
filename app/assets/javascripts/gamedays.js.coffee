@@ -10,8 +10,7 @@ dp.language = 'de';
 dp.todayHighlight = true;
 
 
-$ -> new DateSelector('gameday-datepicker')
-$(document).on 'page:change', -> new DateSelector('gameday-datepicker')
+$(document).on 'page:change', -> new DateSelector 'gameday-datepicker'
 
 
 Array::valueOfByElement = () ->
