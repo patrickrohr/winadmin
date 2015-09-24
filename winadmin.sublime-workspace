@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"game",
+				"gameday_params"
+			],
+			[
+				"valueOf",
+				"valueOfByElement"
+			],
+			[
+				"check",
+				"check_for_rights"
+			],
+			[
 				"team2",
 				"team_2_sets"
 			],
@@ -78,10 +90,6 @@
 			[
 				"catego",
 				"category_id"
-			],
-			[
-				"check",
-				"check_password"
 			],
 			[
 				"lice",
@@ -168,23 +176,15 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/results_controller.rb",
+			"file": "app/assets/javascripts/templates/gamedays/gameday.hbs",
 			"settings":
 			{
-				"buffer_size": 570,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/game.rb",
-			"settings":
-			{
-				"buffer_size": 2245,
+				"buffer_size": 436,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/gamedays_controller.rb",
+			"file": "config/application.rb",
 			"settings":
 			{
 				"buffer_size": 1200,
@@ -192,108 +192,66 @@
 			}
 		},
 		{
-			"file": "app/controllers/users_controller.rb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 1103,
+				"buffer_size": 1100,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/session.rb",
+			"file": "app/helpers/bootstrap_forms_helper.rb",
 			"settings":
 			{
-				"buffer_size": 1187,
+				"buffer_size": 2601,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.1 Release Notes\n  \n  Package Control continues its focus on polish and fixing edge-case bugs. Some\n  of the changes in this version include:\n  \n   - quick panel for Install Package now stays open on Windows with recent\n     versions of ST3, even when focus is lost\n   - new \"downloader_precedence\" setting to allow users to use specific HTTP\n     backend due to network proxy or SSL issues\n   - added Install Local Dependency command for package developers to more\n     easily deal with dependencies during development\n   - improved handling of git/hg package upgrade errors\n   - better handling of locked .sublime-package files on Windows\n   - performance improvements for users with a large number of open windows\n  \n  For package developers, the list of available dependencies has been growing:\n  https://github.com/wbond/package_control_channel/blob/master/repository/dependencies.json\n  \n  Enjoy!\n  \n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"file": "app/models/gameday_set.rb",
 			"settings":
 			{
-				"buffer_size": 10543,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"scratch": true
-			}
-		},
-		{
-			"file": "db/schema.rb",
-			"settings":
-			{
-				"buffer_size": 2607,
+				"buffer_size": 649,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config/environments/production.rb",
+			"file": "app/controllers/gamedays_controller.rb",
 			"settings":
 			{
-				"buffer_size": 3620,
+				"buffer_size": 830,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_navbar.html.erb",
+			"file": "app/views/gamedays/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 867,
+				"buffer_size": 1236,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config/routes.rb",
+			"file": "app/assets/javascripts/gamedays.js.coffee",
 			"settings":
 			{
-				"buffer_size": 2316,
+				"buffer_size": 1950,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/rankings_controller.rb",
+			"file": "app/assets/javascripts/matchups.js.coffee",
 			"settings":
 			{
-				"buffer_size": 1273,
+				"buffer_size": 1248,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/environments/development.rb",
+			"file": "app/models/gameday.rb",
 			"settings":
 			{
-				"buffer_size": 1888,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/rankings/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 833,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/team.rb",
-			"settings":
-			{
-				"buffer_size": 553,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/results/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 217,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/results/_form_static.html.erb",
-			"settings":
-			{
-				"buffer_size": 353,
+				"buffer_size": 154,
 				"line_ending": "Windows"
 			}
 		}
@@ -377,10 +335,19 @@
 	[
 		"/G/Sites/winadmin",
 		"/G/Sites/winadmin/app",
+		"/G/Sites/winadmin/app/assets",
+		"/G/Sites/winadmin/app/assets/javascripts",
+		"/G/Sites/winadmin/app/assets/javascripts/templates",
+		"/G/Sites/winadmin/app/assets/javascripts/templates/gamedays",
 		"/G/Sites/winadmin/app/controllers",
 		"/G/Sites/winadmin/app/models",
-		"/G/Sites/winadmin/config/environments",
-		"/G/Sites/winadmin/db",
+		"/G/Sites/winadmin/app/views",
+		"/G/Sites/winadmin/app/views/gamedays",
+		"/G/Sites/winadmin/app/views/matchups",
+		"/G/Sites/winadmin/app/views/rankings",
+		"/G/Sites/winadmin/app/views/results",
+		"/G/Sites/winadmin/app/views/shared",
+		"/G/Sites/winadmin/app/views/sports",
 		"/G/Sites/winadmin/db/migrate",
 		"/G/Sites/winadmin/lib",
 		"/G/Sites/winadmin/lib/tasks",
@@ -388,46 +355,57 @@
 	],
 	"file_history":
 	[
-		"/G/Sites/winadmin/lib/tasks/deploy.rake",
+		"/G/Sites/winadmin/app/views/gamedays/_form.html.erb",
+		"/G/Sites/winadmin/db/schema.rb",
+		"/G/Sites/winadmin/app/controllers/gamedays_controller.rb",
+		"/G/Sites/winadmin/app/models/gameday_set.rb",
+		"/G/Sites/winadmin/app/models/gameday.rb",
+		"/G/Sites/winadmin/config/routes.rb",
+		"/G/Sites/winadmin/app/views/gamedays/new.html.erb",
+		"/G/Sites/winadmin/app/assets/javascripts/application.js",
+		"/G/Sites/winadmin/app/assets/javascripts/gamedays.js.coffee",
+		"/G/Sites/winadmin/config/initializers/assets.rb",
+		"/G/Sites/winadmin/Gemfile",
+		"/G/Sites/winadmin/app/controllers/application_controller.rb",
+		"/G/Sites/winadmin/config/application.rb",
+		"/G/Sites/winadmin/app/controllers/rankings_controller.rb",
+		"/G/Sites/winadmin/app/controllers/results_controller.rb",
+		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
+		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
+		"/G/Sites/winadmin/app/controllers/teams_controller.rb",
+		"/G/Sites/winadmin/app/controllers/users_controller.rb",
+		"/G/Sites/winadmin/app/controllers/sports_controller.rb",
+		"/G/Sites/winadmin/app/controllers/matchups_controller.rb",
+		"/G/Sites/winadmin/app/models/rights_group.rb",
+		"/G/Sites/winadmin/app/views/results/_form_static.html.erb",
+		"/G/Sites/winadmin/app/views/results/_form.html.erb",
+		"/G/Sites/winadmin/app/models/team.rb",
+		"/G/Sites/winadmin/app/views/rankings/index.html.erb",
+		"/G/Sites/winadmin/config/environments/development.rb",
+		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
+		"/G/Sites/winadmin/config/environments/production.rb",
+		"/G/Sites/winadmin/app/models/session.rb",
 		"/G/Sites/winadmin/app/models/game.rb",
+		"/G/Sites/winadmin/lib/tasks/deploy.rake",
 		"/G/Sites/winadmin/app/views/results/index.html.erb",
 		"/G/Sites/winadmin/app/views/results/_form_editable.html.erb",
-		"/G/Sites/winadmin/app/controllers/application_controller.rb",
-		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/app/views/matchups/index.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/application.html.erb",
 		"/G/Sites/winadmin/app/models/user.rb",
-		"/G/Sites/winadmin/app/models/team.rb",
 		"/G/Sites/winadmin/app/models/sport.rb",
-		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/db/migrate/20150805145107_change_tie_in_games.rb",
-		"/G/Sites/winadmin/app/views/rankings/index.html.erb",
 		"/G/Sites/winadmin/config/locales/en.yml",
 		"/G/Sites/winadmin/config/locales/app.en.yml",
-		"/G/Sites/winadmin/app/assets/javascripts/application.js",
-		"/G/Sites/winadmin/config/routes.rb",
 		"/G/Sites/winadmin/app/assets/javascripts/matchups.js.coffee",
-		"/G/Sites/winadmin/app/controllers/matchups_controller.rb",
 		"/G/Sites/winadmin/app/views/matchups/_form_generate.html.erb",
 		"/G/Sites/winadmin/app/models/league.rb",
 		"/G/Sites/winadmin/app/views/shared/_filter.html.erb",
-		"/G/Sites/winadmin/app/controllers/results_controller.rb",
-		"/G/Sites/winadmin/app/controllers/teams_controller.rb",
-		"/G/Sites/winadmin/app/models/session.rb",
 		"/G/Sites/winadmin/app/helpers/application_helper.rb",
-		"/G/Sites/winadmin/app/views/results/_form.html.erb",
-		"/G/Sites/winadmin/app/controllers/gamedays_controller.rb",
-		"/G/Sites/winadmin/config/application.rb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
-		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
 		"/G/Sites/winadmin/app/views/gamedays/index.html.erb",
-		"/G/Sites/winadmin/Gemfile",
 		"/G/Sites/winadmin/app/views/gamedays/_form_edit.html.erb",
 		"/G/Sites/winadmin/app/views/gamedays/edit.html.erb",
-		"/G/Sites/winadmin/app/views/gamedays/new.html.erb",
 		"/G/Sites/winadmin/app/assets/javascripts/teams.js.coffee",
-		"/G/Sites/winadmin/app/views/gamedays/_form.html.erb",
-		"/G/Sites/winadmin/app/assets/javascripts/gamedays.js.coffee",
 		"/G/Sites/winadmin/app/views/gamedays/_gameday.html.erb",
 		"/G/Sites/winadmin/config/initializers/inflections.rb",
 		"/G/Sites/winadmin/app/views/teams/_form.html.erb",
@@ -435,7 +413,6 @@
 		"/G/Sites/winadmin/app/helpers/bootstrap_forms_helper.rb",
 		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
 		"/G/Sites/winadmin/app/views/teams/show.html.erb",
-		"/G/Sites/winadmin/app/controllers/sports_controller.rb",
 		"/G/Sites/winadmin/app/views/teams/index.html.erb",
 		"/G/Sites/winadmin/app/controllers/game_days_controller.rb",
 		"/G/Sites/winadmin/app/views/teams/edit.html.erb",
@@ -448,19 +425,15 @@
 		"/G/Sites/winadmin/app/mailers/user_mailer.rb",
 		"/G/Sites/winadmin/app/views/sports/edit.html.erb",
 		"/G/Sites/winadmin/app/views/sports/new.html.erb",
-		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
 		"/G/Sites/winadmin/app/views/sessions/new.html.erb",
-		"/G/Sites/winadmin/app/controllers/users_controller.rb",
 		"/G/Sites/winadmin/app/views/user_mailer/forgot_password.text.erb",
 		"/G/Sites/winadmin/app/views/users/_form.html.erb",
 		"/G/Sites/winadmin/app/views/shared/_form_errors.html.erb",
 		"/G/Sites/winadmin/app/views/user_mailer/new_user.text.erb",
 		"/G/Sites/winadmin/app/views/users/edit.html.erb",
-		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
 		"/G/Sites/winadmin/app/views/users/index.html.erb",
 		"/G/Sites/winadmin/app/views/static_pages/help.html.erb",
 		"/G/Sites/winadmin/app/helpers/users_helper.rb",
-		"/G/Sites/winadmin/app/models/rights_group.rb",
 		"/G/Sites/winadmin/lib/abilities.rb",
 		"/G/Sites/winadmin/app/views/static_pages/index.html.erb",
 		"/G/Sites/winadmin/app/helpers/sessions_helper.rb",
@@ -473,10 +446,8 @@
 		"/G/Sites/winadmin/config.ru",
 		"/G/Sites/winadmin/db/migrate/20141216163911_create_leagues.rb",
 		"/G/Sites/winadmin/db/migrate/20141216163159_create_clubs.rb",
-		"/G/Sites/winadmin/config/environments/development.rb",
 		"/G/Sites/winadmin/db/migrate/20141217150729_devise_create_users.rb",
 		"/G/Sites/winadmin/config/initializers/devise.rb",
-		"/G/Sites/winadmin/config/environments/production.rb",
 		"/G/Sites/stva/Gemfile",
 		"/G/Sites/winadmin/config/database.yml",
 		"/G/Sites/winadmin/db/migrate/20141216163605_create_teams.rb",
@@ -511,11 +482,7 @@
 		"/G/Sites/stva/app/assets/stylesheets/prices.css.scss",
 		"/G/Sites/stva/config/locales/de.yml",
 		"/G/Sites/stva/test/fixtures/license_plates.yml",
-		"/G/Sites/stva/app/models/reservation.rb",
-		"/G/Sites/stva/app/views/reservations/new.html.erb",
-		"/G/Sites/stva/app/views/user_mailer/reservation_email.text.erb",
-		"/G/Sites/stva/config/initializers/mime_types.rb",
-		"/G/Sites/stva/app/views/static_pages/index.html.erb"
+		"/G/Sites/stva/app/models/reservation.rb"
 	],
 	"find":
 	{
@@ -535,6 +502,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"field_with_errors",
+			"field-with-errors",
+			"field_with_errors",
+			"partial",
+			"partal",
 			"everythin",
 			"restarting app servers",
 			"bootstrap-datepicker",
@@ -571,72 +543,40 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/results_controller.rb",
+					"file": "app/assets/javascripts/templates/gamedays/gameday.hbs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 570,
+						"buffer_size": 436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								186,
-								186
+								263,
+								307
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/models/game.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2245,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1308,
-								1308
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 375.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/gamedays_controller.rb",
+					"file": "config/application.rb",
 					"semi_transient": false,
 					"settings":
 					{
@@ -647,8 +587,66 @@
 						"selection":
 						[
 							[
-								548,
-								548
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/helpers/bootstrap_forms_helper.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2173,
+								2173
 							]
 						],
 						"settings":
@@ -658,27 +656,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2.0,
+						"translation.y": 485.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/controllers/users_controller.rb",
+					"buffer": 4,
+					"file": "app/models/gameday_set.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1103,
+						"buffer_size": 649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								732,
-								736
+								160,
+								160
 							]
 						],
 						"settings":
@@ -691,16 +689,106 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/models/session.rb",
+					"buffer": 5,
+					"file": "app/controllers/gamedays_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1187,
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								767,
+								767
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/gamedays/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/javascripts/gamedays.js.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/assets/javascripts/matchups.js.coffee",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1248,
 						"regions":
 						{
 						},
@@ -713,343 +801,43 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 100.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10543,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10543,
-								10543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "db/schema.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2607,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2060,
-								2060
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 287.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "config/environments/production.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3620,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3006,
-								2543
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 919.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/layouts/_navbar.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 867,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								411,
-								411
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "config/routes.rb",
+					"file": "app/models/gameday.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2316,
+						"buffer_size": 154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								260,
-								260
+								134,
+								134
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/controllers/rankings_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1273,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								953,
-								953
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 26.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "config/environments/development.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1888,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1883,
-								1883
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 231.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/views/rankings/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 833,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								467,
-								467
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 58.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "app/models/team.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 553,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								546,
-								546
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 10.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "app/views/results/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 217,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								73,
-								73
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "app/views/results/_form_static.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 353,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								353,
-								353
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -1090,6 +878,10 @@
 	{
 		"height": 0.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
 	"pinned_build_system": "",
 	"project": "winadmin.sublime-project",
 	"replace":
@@ -1103,6 +895,58 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"app.rb",
+				"config\\application.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"boot",
+				"app\\helpers\\bootstrap_forms_helper.rb"
+			],
+			[
+				"schema",
+				"db\\schema.rb"
+			],
+			[
+				"gameday",
+				"app\\models\\gameday.rb"
+			],
+			[
+				"rout",
+				"config\\routes.rb"
+			],
+			[
+				"gamedayset",
+				"app\\models\\gameday_set.rb"
+			],
+			[
+				"appli",
+				"config\\application.rb"
+			],
+			[
+				"appjs",
+				"app\\assets\\javascripts\\application.js"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"rights",
+				"app\\models\\rights_group.rb"
+			],
+			[
+				"ri",
+				"app\\models\\rights_group.rb"
+			],
 			[
 				"deplo",
 				"lib\\tasks\\deploy.rake"
@@ -1134,14 +978,6 @@
 			[
 				"viematchupin",
 				"app\\views\\matchups\\index.html.erb"
-			],
-			[
-				"schema",
-				"db\\schema.rb"
-			],
-			[
-				"gameday",
-				"app\\models\\gameday.rb"
 			],
 			[
 				"gamedayc",
@@ -1178,10 +1014,6 @@
 			[
 				"en",
 				"config\\locales\\en.yml"
-			],
-			[
-				"rout",
-				"config\\routes.rb"
 			],
 			[
 				"viewlay",
@@ -1224,10 +1056,6 @@
 				"config\\routes.rb"
 			],
 			[
-				"appjs",
-				"app\\assets\\javascripts\\application.js"
-			],
-			[
 				"rou",
 				"config\\routes.rb"
 			],
@@ -1256,10 +1084,6 @@
 				"app\\models\\gameday.rb"
 			],
 			[
-				"gemfil",
-				"Gemfile"
-			],
-			[
 				"bsh",
 				"app\\helpers\\bootstrap_forms_helper.rb"
 			],
@@ -1270,10 +1094,6 @@
 			[
 				"appcss",
 				"app\\assets\\stylesheets\\application.css.scss"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"sche",
@@ -1452,10 +1272,6 @@
 				"app\\controllers\\license_plates_controller.rb"
 			],
 			[
-				"gemfile",
-				"Gemfile"
-			],
-			[
 				"reseshow",
 				"app\\views\\reservations\\show.html.erb"
 			],
@@ -1590,30 +1406,6 @@
 			[
 				"form",
 				"app\\models\\format.rb"
-			],
-			[
-				"liccon",
-				"app\\controllers\\license_plates_controller.rb"
-			],
-			[
-				"static",
-				"app\\controllers\\static_pages_controller.rb"
-			],
-			[
-				"licin",
-				"app\\views\\license_plates\\index.html.erb"
-			],
-			[
-				"lics",
-				"app\\models\\license_plate.rb"
-			],
-			[
-				"time",
-				"tmp\\cache\\assets\\development\\sass\\7bb49ac5431a895a031754df4cfd0632538fc92f\\_image.scssc"
-			],
-			[
-				"appli",
-				"config\\application.rb"
 			]
 		],
 		"width": 0.0
