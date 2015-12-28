@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   resources :rankings
 
   post 'gamedays', as: :gameday_sets, to: 'gamedays#create_many'
+  post 'games', as: :game_sets, to: 'matchups#create_many'
 
-  post 'matchups/save', to: 'matchups#save', as: :mathups_save
+  post 'matchups/save', to: 'matchups#save', as: :matchups_save
   get 'matchups/:id/reverse', to: 'matchups#reverse', as: :matchup_reverse
   post 'results/create', to: 'results#collection_create', as: :results_create
 

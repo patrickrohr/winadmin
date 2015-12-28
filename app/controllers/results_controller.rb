@@ -1,4 +1,5 @@
 class ResultsController < ApplicationController
+  authorize_resource :game, :league
 
   def new
   end

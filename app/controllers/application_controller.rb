@@ -12,6 +12,11 @@ class ApplicationController < ActionController::Base# Prevent CSRF attacks by ra
     self.user_session.load
   end
 
+  # added for cancancan
+  def current_user
+    self.user_session.user
+  end
+
   def has_rights(*groups)
     check_for_rights *groups
   end
@@ -27,6 +32,11 @@ class ApplicationController < ActionController::Base# Prevent CSRF attacks by ra
     unless check_for_rights *groups
       redirect_to login_path
     end
+  end
+
+  # new role/rights managment with cancan
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to login_path, :alert => exception.message
   end
 
 

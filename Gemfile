@@ -21,6 +21,9 @@ gem 'handlebars_assets'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# https://github.com/CanCanCommunity/cancancan
+gem 'cancancan', '=1.10'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 

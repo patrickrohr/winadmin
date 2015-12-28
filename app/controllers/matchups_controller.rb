@@ -1,25 +1,16 @@
 class MatchupsController < ApplicationController
+  authorize_resource :league, :game
 
   def new
   end
 
-  def create #generate matchups, damn i need to put this crap in models
-    league = League.find params[:league][:id]
-    used_teams = []
-
-    league.teams.each do |team1| # generate matchups for EVERY team in leagues
-      used_teams << team1.id # indicates that this teams matchups have already been created
-
-      league.teams.each do |team2| # should loop through opponents (and filter out used_teams)
-        next if used_teams.include?(team2.id)
-        game = Game.create team_1_id: team1.id, team_2_id: team2.id, league_id: league.id
-        unless game.errors.empty?
-          redirect_to(action: :index , alert: t(:object_create_failed))
-        end
-      end
+  def create_many
+    @game_set = GameSet.new(gameset_params)
+    if @game_set.save
+      redirect_to({ action: :index }, success: t(:object_created))
+    else
+      redirect_to({ action: :index }, alert: t(:object_create_failed))
     end
-
-    redirect_to(action: :index , success: t(:object_created))
   end
 
   def save
@@ -40,26 +31,21 @@ class MatchupsController < ApplicationController
   def index
     sport_id = sport_id_filter_default request[:filter]
     @leagues = League.where(sport_id: sport_id).order(:number)
+    @game_set = GameSet.new
+    @game_set.games = Game.where(league_id: @leagues)
   end
 
-  def reverse
-    game = Game.find params[:id]
-    game.update_attributes(team_1_id: game.team_2_id, team_2_id: game.team_1_id)
-
-    if game.errors.empty?
-      redirect_to matchups_path, success: t(:object_updated)
-    else
-      redirect_to matchups_path, alert: t(:object_update_failed)
-    end
-  end
-
-  def destroy
+  def destroy # TODO
     destroy_action(Game, filter: Game.find(params[:id]).league.sport_id)
   end
 
 
   private
   def game_params
-    #params.require(:sport).permit(:name, :number_of_sets, :number_of_leagues)
+    #params.require(:game).permit(:gameday_id, :team_1_number, :team_2_number)
+  end
+
+  def gameset_params
+    params.require(:game_set).permit(games_attributes: [:id, :gameday_id, :team_1_number, :team_2_number])
   end
 end

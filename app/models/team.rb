@@ -3,6 +3,7 @@ class Team < ActiveRecord::Base
 
   validates :name, presence: true
   validates :display_name, presence: true
+  validates :number, presence: true, numericality: { only_integer: true }
 
   attr_accessor :sport_id
 

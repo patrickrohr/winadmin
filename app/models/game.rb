@@ -3,8 +3,36 @@ class Game < ActiveRecord::Base
   belongs_to :gameday
   has_many :gamesets, dependent: :destroy
 
+  attr_accessor :team_1_number, :team_2_number
+  before_validation :set_attributes
   after_create :create_gamesets
   
+  def set_attributes
+    if league.nil? and not gameday.nil?
+      self.league = gameday.league
+    end
+
+    unless @team_1_number.nil? or @team_2_number.nil?
+      team_1 = Team.find_by league_id: league_id, number: @team_1_number
+      team_2 = Team.find_by league_id: league_id, number: @team_2_number
+      if team_1.nil? or team_2.nil?
+        errors[:base] << "Team existiert nicht."
+        return false
+      end
+      self.team_1_id = team_1.id
+      self.team_2_id = team_2.id
+    end
+  end
+
+  def team_1_number
+    team_1.number
+  end
+
+  def team_2_number
+    team_2.number
+  end
+
+
   def team_1
     @team_1 ||= Team.find(team_1_id)
   end

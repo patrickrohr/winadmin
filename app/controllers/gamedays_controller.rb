@@ -1,5 +1,6 @@
 class GamedaysController < ApplicationController
-
+  authorize_resource
+  
   def new
     @gameday_set = GamedaySet.new
   end

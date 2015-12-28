@@ -1,4 +1,5 @@
 class RankingsController < ApplicationController
+  authorize_resource :sport
 
   def index
     sport_id = sport_id_filter_default request[:filter]

@@ -1,4 +1,6 @@
 class SportsController < ApplicationController
+  authorize_resource
+  
   def new
     @sport = Sport.new
   end

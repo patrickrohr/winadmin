@@ -1,0 +1,43 @@
+<p>
+  <%= render partial: 'shared/filter', locals: { obj: Sport.all, label: t(:sports_filter) } %>
+</p>
+<p>
+  <%= render partial: 'form_generate' %>
+</p>
+
+<%= form_tag matchups_save_path do %>
+  <% @leagues.each do |l| %>
+    <h1><%= "#{l.number}. Liga" %>
+      <%= submit_tag t(:submit), class: "btn btn-primary" %>
+    </h1>
+      <% l.games.join_left_gamedays.each do |obj| %>
+        <div class="well well-sm">
+          <div class="row">
+            <div class="col-xs-8 col-md-9 form-inline">
+              <%= hidden_field_tag "order[#{obj.id}]", obj.order %>
+              (<span id="<%= "order_tag_#{obj.id}" %>"><%= obj.order %></span>)
+              <strong><%= "#{obj.team_1.display_name} : #{obj.team_2.display_name}" %></strong>
+            </div>
+            <!--<div class="col-xs-4 col-md-3 form-inline text-right">
+              <%= text_field_tag "order[#{obj.id}]", obj.order, class: "form-control input-sm" %>
+            </div>-->
+            <div class="col-xs-4 col-md-3 text-right">
+              <%= link_to(t(:reverse), matchup_reverse_path(obj)) %>
+              <%= link_to(t(:delete), matchup_path(obj), method: :delete, data: { confirm: t(:delete_confirm) }) %>
+            </div>
+          </div>
+          <div class="row">
+            <% l.gamedays.order(:date).each do |gd| %>
+              <div class="col-md-2">
+                <%= label_tag "date_#{obj.id}_#{gd.id}", style: "font-weight:normal;" do %>
+                  <%= radio_button_tag "date[#{obj.id}]", gd.id, (obj.gameday_id == gd.id) %>
+                  <%= gd.date %>
+                <% end %>
+              </div> 
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  <%= hidden_field :sport, :id, value: request[:filter] %>
+<% end %>
