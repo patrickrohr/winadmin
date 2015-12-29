@@ -11,10 +11,10 @@
       <div class="game-set" id="<%= gd.id %>">
         <%= f.fields_for :games, f.object.games.where(gameday_id: gd.id) do |game| %>
           <div class="form-group form-inline">
-            <%= game.label :team_1_number, "Team 1 Nummer" %>
             <%= game.text_field :team_1_number, class: 'form-control', name: 'game_set[games_attributes][][team_1_number]' %>
-            <%= game.label :team_2_number, "Team 2 Nummer" %>
+            <span> : </span>
             <%= game.text_field :team_2_number, class: 'form-control', name: 'game_set[games_attributes][][team_2_number]' %>
+            <%= link_to(t(:delete), game.object, method: :delete, data: { confirm: t(:delete_confirm) }) %>
             <%= game.hidden_field :gameday_id, name: 'game_set[games_attributes][][gameday_id]' %>
             <%= game.hidden_field :id, name: 'game_set[games_attributes][][id]' %>
           </div> 

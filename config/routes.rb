@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :matchups
   resources :results
   resources :rankings
+  resources :game, controller: :matchups
 
   post 'gamedays', as: :gameday_sets, to: 'gamedays#create_many'
   post 'games', as: :game_sets, to: 'matchups#create_many'

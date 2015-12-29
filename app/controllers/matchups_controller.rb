@@ -35,7 +35,7 @@ class MatchupsController < ApplicationController
     @game_set.games = Game.where(league_id: @leagues)
   end
 
-  def destroy # TODO
+  def destroy
     destroy_action(Game, filter: Game.find(params[:id]).league.sport_id)
   end
 
