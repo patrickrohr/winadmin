@@ -4,6 +4,7 @@ module ApplicationHelper
     capture do #starts output buffer
       for c in controllers
         c = c.to_sym
+        next if cannot? :see_menu, c
         active = controller_name.to_sym == c ? 'active' : ''
         c_name = controller_label_for c
         link_to = link_to(c_name, controller: c, action: :index)

@@ -4,6 +4,8 @@ class Ability
   def initialize(user)
     user ||= User.new
 
+    alias_action :create, :read, :update, :destroy, :to => :crud
+
     if user.rights_group_id.nil? # guest
         return
     end
@@ -11,8 +13,13 @@ class Ability
     case user.rights_group.name
     when 'Admin'
         can :manage, :all
-    when 'Redaktor', 'Veranstalter'
-        can :manage, Game
+    when 'Redaktor'
+        can :crud, Game
+        can :see_menu, [:results, :rankings]
+    when 'Veranstalter'
+        can :crud, Game
+        can :change_all_results, Game
+        can :see_menu, [:results, :rankings]
     end
 
 

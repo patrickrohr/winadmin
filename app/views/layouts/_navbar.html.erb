@@ -12,7 +12,7 @@
     <ul class="nav navbar-nav navbar-right">
        <%= build_top_nav([:users, :sports, :teams, :gamedays, :matchups, :results, :rankings]) %>
       <li class="<%= current_page?(controller: :static_pages, action: :help) ? 'active' : '' %>"><%= link_to(action_label_for(:static_pages, :help), help_path) %></li>
-      <li><%= link_to(t(:logout), logout_path) %></li>
+      <li><%= link_to(t(:logout), logout_path) if user_session.authenticated? %></li>
     </ul>
   </div>
 </div>

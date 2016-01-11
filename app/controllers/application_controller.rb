@@ -1,8 +1,11 @@
-class ApplicationController < ActionController::Base# Prevent CSRF attacks by raising an exception.
+class ApplicationController < ActionController::Base
+  check_authorization
+  
+  # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   add_flash_types :success
-  helper_method :has_rights, :user_is
+  helper_method :has_rights, :user_is, :user_session
 
   attr_accessor :user_session
   before_filter :load_user_session
@@ -83,7 +86,7 @@ class ApplicationController < ActionController::Base# Prevent CSRF attacks by ra
       if user_session.has_key?(:filter_sport_id)# check if there's an id in session
         sport_id = user_session.get(:filter_sport_id)
       else
-        sport_id = Sport.order(:name).first
+        sport_id = Sport.order(:name).first.id
       end
     end
     Sport.selected = sport_id

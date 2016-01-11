@@ -1,5 +1,5 @@
 class ResultsController < ApplicationController
-  authorize_resource :game, :league
+  authorize_resource :game, :league, :parent => false
 
   def new
   end

@@ -1,4 +1,4 @@
-<% if user_is(:admin) or (Date.yesterday() - game.gameday.date < 1) %>
+<% if can? :change_all_results, game or (Date.yesterday() - game.gameday.date < 1) %>
   <%= render partial: "form_editable", locals: { game: game }%>
 <% else %>
   <%= render partial: "form_static", locals: { game: game }%>

@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-
+  skip_authorization_check
   def new
     # Is defined in application_controller
     # @user_session = Session.new session

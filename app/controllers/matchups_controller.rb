@@ -1,5 +1,5 @@
 class MatchupsController < ApplicationController
-  authorize_resource :league, :game
+  authorize_resource :league, :game, :parent => false
 
   def new
   end
@@ -30,7 +30,7 @@ class MatchupsController < ApplicationController
 
   def index
     sport_id = sport_id_filter_default request[:filter]
-    @leagues = League.where(sport_id: sport_id).order(:number)
+    @leagues = League.where(sport_id: sport_id).order(number: :asc)
     @game_set = GameSet.new
     @game_set.games = Game.where(league_id: @leagues)
   end
