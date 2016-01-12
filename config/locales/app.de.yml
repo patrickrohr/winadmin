@@ -30,3 +30,58 @@ de:
   submit: "Absenden"
   reverse: "Umkehren"
   rankings_generate: "Rangliste erstellen"
+  login: "Anmelden"
+  forgot_password: "Passwort vergessen"
+  helpers:
+    label:
+      session:
+        email: "E-Mail"
+        password: "Passwort"
+
+  activerecord:
+    models:
+      club: "Verein"
+      gameday: "Spieltag"
+      game: "Spiel"
+      gameset: "Satz"
+      league: "Liga"
+      sport: "Sportart"
+      team: "Team"
+      user: "Benutzer"
+    attributes:
+      club:
+        name: "Name"
+      gameday:
+        date: "Datum"
+        location: "Ort"
+      game:
+        tie: "Unentschieden"
+      gameset:
+        number: "Nummer"
+      league:
+        number: 
+      sport:
+        name: "Name"
+        number_of_sets: "Anzahl Spielsätze"
+      team:
+        name: "Name"
+        display_name: "Anzeigename"
+        email: "E-Mail"
+        points: "Punkte"
+      user:
+        first_name: "Vorname"
+        last_name: "Nachname"
+        email: "E-Mail"
+        rights_group: "Rechtegruppe"
+  controllers:
+    gamedays: "Spieltage"
+    matchups: "Begegnungen"
+    rankings: "Rangliste"
+    results: "Resultate"
+    sports: "Sportarten"
+    teams: "Teams"
+    users: "Benutzer"
+  static_pages:
+    help: "Hilfe"
+
+  logout: "Abmelden"

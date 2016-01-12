@@ -180,75 +180,43 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/matchups_controller.rb",
+			"file": "app/models/session.rb",
 			"settings":
 			{
-				"buffer_size": 1296,
+				"buffer_size": 1187,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/templates/matchups/game.hbs",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 344,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/application_controller.rb",
-			"settings":
-			{
-				"buffer_size": 2884,
+				"buffer_size": 649,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/matchups.js.coffee",
+			"file": "config/locales/de.yml",
 			"settings":
 			{
-				"buffer_size": 658,
+				"buffer_size": 5388,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/locales/app.de.yml",
+			"settings":
+			{
+				"buffer_size": 1368,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 1198,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/game_set.rb",
-			"settings":
-			{
-				"buffer_size": 853,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/game.rb",
-			"settings":
-			{
-				"buffer_size": 3064,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1128,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/matchups/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 1255,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 2545,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -331,53 +299,50 @@
 	[
 		"/G/Sites/winadmin",
 		"/G/Sites/winadmin/app",
-		"/G/Sites/winadmin/app/assets",
 		"/G/Sites/winadmin/app/assets/javascripts",
 		"/G/Sites/winadmin/app/assets/javascripts/templates",
 		"/G/Sites/winadmin/app/assets/javascripts/templates/gamedays",
 		"/G/Sites/winadmin/app/assets/javascripts/templates/matchups",
-		"/G/Sites/winadmin/app/controllers",
 		"/G/Sites/winadmin/app/controllers/concerns",
-		"/G/Sites/winadmin/app/models",
-		"/G/Sites/winadmin/app/views",
 		"/G/Sites/winadmin/app/views/layouts",
-		"/G/Sites/winadmin/app/views/matchups",
-		"/G/Sites/winadmin/app/views/rankings",
-		"/G/Sites/winadmin/app/views/sports",
-		"/G/Sites/winadmin/bin",
-		"/G/Sites/winadmin/lib",
-		"/G/Sites/winadmin/lib/tasks",
-		"/G/Sites/winadmin/vendor"
+		"/G/Sites/winadmin/config",
+		"/G/Sites/winadmin/config/locales",
+		"/G/Sites/winadmin/lib/tasks"
 	],
 	"file_history":
 	[
-		"/G/Sites/winadmin/app/models/league.rb",
+		"/G/Sites/winadmin/lib/tasks/deploy.rake",
+		"/G/Sites/winadmin/app/models/ability.rb",
+		"/G/Sites/winadmin/app/controllers/results_controller.rb",
+		"/G/Sites/winadmin/config/routes.rb",
+		"/G/Sites/winadmin/app/controllers/rankings_controller.rb",
+		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
+		"/G/Sites/winadmin/app/controllers/matchups_controller.rb",
+		"/G/Sites/winadmin/app/helpers/application_helper.rb",
+		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
+		"/G/Sites/winadmin/app/controllers/application_controller.rb",
+		"/G/Sites/winadmin/app/views/matchups/index.html.erb",
+		"/G/Sites/winadmin/app/controllers/users_controller.rb",
+		"/G/Sites/winadmin/app/models/game.rb",
 		"/G/Sites/winadmin/app/models/game_set.rb",
 		"/G/Sites/winadmin/app/assets/javascripts/matchups.js.coffee",
+		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
+		"/G/Sites/winadmin/app/views/results/_form.html.erb",
 		"/G/Sites/winadmin/app/assets/javascripts/templates/matchups/game.hbs",
-		"/G/Sites/winadmin/app/controllers/matchups_controller.rb",
-		"/G/Sites/winadmin/app/models/game.rb",
-		"/G/Sites/winadmin/config/routes.rb",
-		"/G/Sites/winadmin/app/views/matchups/index.html.erb",
+		"/G/Sites/winadmin/app/models/league.rb",
 		"/G/Sites/winadmin/db/migrate/20151228205629_remove_order_from_games.rb",
 		"/G/Sites/winadmin/app/controllers/gamedays_controller.rb",
 		"/G/Sites/winadmin/db/schema.rb",
 		"/G/Sites/winadmin/app/assets/javascripts/templates/gamedays/gameday.hbs",
 		"/G/Sites/winadmin/app/assets/javascripts/templates/matchups",
-		"/G/Sites/winadmin/app/controllers/users_controller.rb",
 		"/G/Sites/winadmin/app/controllers/sports_controller.rb",
 		"/G/Sites/winadmin/app/controllers/teams_controller.rb",
 		"/G/Sites/winadmin/app/views/teams/_form.html.erb",
 		"/G/Sites/winadmin/app/models/team.rb",
 		"/G/Sites/winadmin/app/views/teams/index.html.erb",
 		"/G/Sites/winadmin/Gemfile",
-		"/G/Sites/winadmin/app/controllers/application_controller.rb",
-		"/G/Sites/winadmin/app/models/ability.rb",
 		"/G/Sites/winadmin/app/views/matchups/_old_index.html.erb",
 		"/G/Sites/winadmin/db/migrate/20151228131053_add_new_number_to_teams.rb",
-		"/G/Sites/winadmin/app/controllers/rankings_controller.rb",
-		"/G/Sites/winadmin/app/controllers/results_controller.rb",
-		"/G/Sites/winadmin/app/controllers/sessions_controller.rb",
 		"/G/Sites/winadmin/app/models/matchup_set.rb",
 		"/G/Sites/winadmin/app/models/gameday.rb",
 		"/G/Sites/winadmin/config/secrets.yml",
@@ -389,16 +354,12 @@
 		"/G/Sites/winadmin/app/views/gamedays/new.html.erb",
 		"/G/Sites/winadmin/app/assets/javascripts/application.js",
 		"/G/Sites/winadmin/config/initializers/assets.rb",
-		"/G/Sites/winadmin/app/controllers/static_pages_controller.rb",
 		"/G/Sites/winadmin/app/models/rights_group.rb",
 		"/G/Sites/winadmin/app/views/results/_form_static.html.erb",
-		"/G/Sites/winadmin/app/views/results/_form.html.erb",
 		"/G/Sites/winadmin/app/views/rankings/index.html.erb",
 		"/G/Sites/winadmin/config/environments/development.rb",
-		"/G/Sites/winadmin/app/views/layouts/_navbar.html.erb",
 		"/G/Sites/winadmin/config/environments/production.rb",
 		"/G/Sites/winadmin/app/models/session.rb",
-		"/G/Sites/winadmin/lib/tasks/deploy.rake",
 		"/G/Sites/winadmin/app/views/results/index.html.erb",
 		"/G/Sites/winadmin/app/views/results/_form_editable.html.erb",
 		"/G/Sites/winadmin/app/views/layouts/application.html.erb",
@@ -409,7 +370,6 @@
 		"/G/Sites/winadmin/config/locales/app.en.yml",
 		"/G/Sites/winadmin/app/views/matchups/_form_generate.html.erb",
 		"/G/Sites/winadmin/app/views/shared/_filter.html.erb",
-		"/G/Sites/winadmin/app/helpers/application_helper.rb",
 		"/G/Sites/winadmin/app/models/gameset.rb",
 		"/G/Sites/winadmin/app/views/gamedays/index.html.erb",
 		"/G/Sites/winadmin/app/views/gamedays/_form_edit.html.erb",
@@ -498,6 +458,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ae",
+			"oe",
+			"ue",
 			"create_game",
 			"gameday",
 			"field_with_errors",
@@ -531,6 +494,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"ä",
+			"ö",
+			"ü",
 			"game"
 		],
 		"reverse": false,
@@ -542,24 +508,24 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/matchups_controller.rb",
+					"file": "app/models/session.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1296,
+						"buffer_size": 1187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								962,
-								962
+								400,
+								412
 							]
 						],
 						"settings":
@@ -572,57 +538,60 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/assets/javascripts/templates/matchups/game.hbs",
+					"file": "app/models/user.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 344,
+						"buffer_size": 649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								37,
-								37
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/application_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2884,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								649,
+								649
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/locales/de.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								939,
+								939
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/YAML/YAML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -635,114 +604,24 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/assets/javascripts/matchups.js.coffee",
+					"file": "config/locales/app.de.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 658,
+						"buffer_size": 1368,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								658,
-								658
+								1368,
+								1368
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/models/game_set.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								547,
-								547
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 242.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/models/game.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3064,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2381
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1345.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/controllers/users_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1128,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/YAML/YAML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -754,63 +633,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/views/matchups/index.html.erb",
+					"buffer": 4,
+					"file": "config/application.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1255,
+						"buffer_size": 1198,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								820,
-								820
+								1193,
+								1193
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "config/routes.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2545,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								319,
-								319
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 30.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -869,6 +718,14 @@
 		"selected_items":
 		[
 			[
+				"deploy.rak",
+				"lib\\tasks\\deploy.rake"
+			],
+			[
+				"rout",
+				"config\\routes.rb"
+			],
+			[
 				"route",
 				"config\\routes.rb"
 			],
@@ -923,10 +780,6 @@
 			[
 				"teamco",
 				"app\\controllers\\teams_controller.rb"
-			],
-			[
-				"rout",
-				"config\\routes.rb"
 			],
 			[
 				"applicat",
@@ -1375,10 +1228,6 @@
 			[
 				"laycss",
 				"app\\assets\\stylesheets\\layout.css.scss"
-			],
-			[
-				"app.css",
-				"app\\assets\\stylesheets\\application.css.scss"
 			]
 		],
 		"width": 0.0
@@ -1417,7 +1266,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 284.0,
+	"side_bar_width": 170.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
