@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
 
   def generate_password
     #self.password = "test"
-    self.password = SecureRandom.urlsafe_base64(8) # TODO: DO NOT FORGET ABOUT THIS
+    self.password = SecureRandom.urlsafe_base64(6) # TODO: DO NOT FORGET ABOUT THIS
 
     @password_new = self.password #since only a hash will be saved in the db
   end
