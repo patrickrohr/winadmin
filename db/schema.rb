@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228205629) do
+ActiveRecord::Schema.define(version: 20160806195235) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +75,9 @@ ActiveRecord::Schema.define(version: 20151228205629) do
     t.integer  "league_id"
     t.integer  "game_count"
     t.integer  "number"
+    t.integer  "goals_for"
+    t.integer  "goals_against"
+    t.integer  "goals_difference"
   end
 
   create_table "users", force: true do |t|

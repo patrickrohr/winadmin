@@ -11,15 +11,17 @@
         <tr>
           <th>Rang
           <th><%= Team.human_attribute_name :name %>
-          <th><%= Team.human_attribute_name :points %>
           <th>Anzahl Spiele
+          <th><%= Team.human_attribute_name :points %>
+          <th><%= Team.human_attribute_name :goals_difference %>
       <tbody>
-        <% l.teams.order(points: :desc).each_with_index do |team, i| %>
+        <% l.teams.order(points: :desc, goals_difference: :desc, goals_for: :desc).each_with_index do |team, i| %>
           <tr>
             <td><%= i + 1 %>
             <td><%= team.display_name %>
-            <td><%= team.points %>
             <td><%= team.game_count %>
+            <td><%= team.points %>
+            <td><%= team.goals_difference %>
         <% end %>
     </table>
   </div>

@@ -99,9 +99,9 @@ class Game < ActiveRecord::Base
     self.joins('LEFT JOIN gamedays ON games.gameday_id = gamedays.id').order('gamedays.date, games.id')
   end
 
-  def self.join_gamedays
-    self.joins(:gameday).order('gamedays.date, games.id')
-  end
+  #def self.join_gamedays
+  #  self.joins(:gameday).order('gamedays.date, games.id')
+  #end
 
   # joins gamedays table and checks rights, non admins will only be able to see 
   def self.join_gamedays
@@ -110,5 +110,13 @@ class Game < ActiveRecord::Base
 
   def gameset_team_points(set_number, team_number)
     gamesets.where(number: i).first.send("points_team_#{team_number}".to_sym)
+  end
+
+  def result_printable
+    arr = []
+    gamesets.order(number: :asc).each_with_index do |set, i|
+      arr[i] = "#{set.points_team_1}:#{set.points_team_2}"
+    end
+    arr.join(" , ")
   end
 end

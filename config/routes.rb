@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :results
   resources :rankings
   resources :game, controller: :matchups
+  resources :public, only: [:index, :show]
 
   post 'gamedays', as: :gameday_sets, to: 'gamedays#create_many'
   post 'games', as: :game_sets, to: 'matchups#create_many'

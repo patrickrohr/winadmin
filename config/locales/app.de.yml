@@ -14,7 +14,7 @@ de:
   object_create_failed: "Ein Fehler ist aufgetreten. Der Eintrag konnte nicht erstellt werden."
   forgot_password_subject: "Ihr Passwort wurde zurückgesetzt."
   new_user_subject: "Benutzername und Passwort"
-  check_your_email: "Eine Email mit Ihrem Passwort wurde and Sie gesendet."
+  check_your_email: "Eine Email mit Ihrem Passwort wurde an Sie gesendet."
   show: "Details"
   update: "Ändern"
   delete: "Löschen"
@@ -68,6 +68,8 @@ de:
         display_name: "Anzeigename"
         email: "E-Mail"
         points: "Punkte"
+        goals_difference: "Differenz"
+        goals_for: "Goals / Spielpunkte"
       user:
         first_name: "Vorname"
         last_name: "Nachname"

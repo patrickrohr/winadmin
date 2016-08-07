@@ -23,6 +23,10 @@ class Team < ActiveRecord::Base
     end
   end
 
+  def self.order_ranking
+
+  end
+
   #def game_count
   #  Game.joins(:gameday).where('gamedays.date<=?', Date.today).where('(games.team_1_id=? OR games.team_2_id=?) AND (games.tie=? OR games.winner_id IS NOT NULL)', id, id, true).size
   #end

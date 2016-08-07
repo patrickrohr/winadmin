@@ -1,0 +1,50 @@
+<h1>Resultate <%= @sport.name %></h1>
+<% @sport.leagues.each do |l| %>
+  <h3><%= "#{l.number}. Liga" %></h3>
+  <div class="responsive-table">
+    <table class="table table-condensed table-responsive">
+      <thead>
+        <tr>
+          <th>Rang
+          <th><%= Team.human_attribute_name :name %>
+          <th>Anzahl Spiele
+          <th><%= Team.human_attribute_name :points %>
+          <th><%= Team.human_attribute_name :goals_difference %>
+      <tbody>
+        <% l.teams.order(points: :desc, goals_difference: :desc, goals_for: :desc).each_with_index do |team, i| %>
+          <tr>
+            <td><%= i + 1 %>
+            <td><%= team.display_name %>
+            <td><%= team.game_count %>
+            <td><%= team.points %>
+            <td><%= team.goals_difference %>
+        <% end %>
+    </table>
+  </div>
+
+
+    
+<% end %>
+
+<h2>Spiele</h2>
+
+<% @sport.leagues.each do |l| %>
+  <h3><%= "#{l.number}. Liga" %></h3>
+  <% l.gamedays.each do |gameday| %>
+    <h4><%= "#{gameday.date} - #{gameday.location}" %></h4>
+    <div class="responsive-table">
+      <table class="table table-condensed table-responsive">
+        <thead>
+          <tr>
+            <th>Spiel
+            <th>Resultat
+        <tbody>
+          <% gameday.games.each do |game| %>
+            <tr>
+              <td><%= "#{game.team_1.display_name} : #{game.team_2.display_name}" %>
+              <td><%= game.result_printable %>
+          <% end %>
+      </table>
+    </div>
+  <% end %>
+<% end %>
