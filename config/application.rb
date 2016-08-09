@@ -17,7 +17,7 @@ module Winadmin
 
     # For Handlebars assets and heroku
     config.assets.initialize_on_precompile = false
-    config.assets.version = '1.1'
+    config.assets.version = '1.2'
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
