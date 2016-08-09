@@ -39,6 +39,7 @@ class ApplicationController < ActionController::Base
 
   # new role/rights managment with cancan
   rescue_from CanCan::AccessDenied do |exception|
+    #raise "#{exception.action} - #{exception.inspect}"
     redirect_to login_path, :alert => exception.message
   end
 

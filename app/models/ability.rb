@@ -15,9 +15,11 @@ class Ability
         can :manage, :all
     when 'Redaktor'
         can :crud, Game
+        can :collection_create, Game
         can :see_menu, [:results, :rankings]
     when 'Veranstalter'
         can :crud, Game
+        can :collection_create, Game
         can :change_all_results, Game
         can :see_menu, [:results, :rankings]
     end

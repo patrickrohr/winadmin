@@ -49,6 +49,10 @@ class Game < ActiveRecord::Base
     return tie || false
   end
 
+  def played?
+    return tie? || winner_id > 0
+  end
+
   def create_gamesets
     for i in 1..(league.sport.number_of_sets)
       gamesets.create(number: i)
@@ -113,6 +117,7 @@ class Game < ActiveRecord::Base
   end
 
   def result_printable
+    return "" unless played?
     arr = []
     gamesets.order(number: :asc).each_with_index do |set, i|
       arr[i] = "#{set.points_team_1}:#{set.points_team_2}"

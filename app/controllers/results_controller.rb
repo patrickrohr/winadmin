@@ -32,6 +32,6 @@ class ResultsController < ApplicationController
 
   private
   def result_params
-    #params.require(:team).permit(:name, :display_name, :email, :sport_id, :league_id, :sport_id)
+    #params.require(:team).permit(:name, :email, :sport_id, :league_id, :sport_id)
   end
 end

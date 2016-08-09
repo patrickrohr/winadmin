@@ -33,6 +33,6 @@ class TeamsController < ApplicationController
 
   private
   def team_params
-    params.require(:team).permit(:name, :display_name, :email, :number, :sport_id, :league_id, :sport_id)
+    params.require(:team).permit(:name, :email, :number, :sport_id, :league_id, :sport_id)
   end
 end

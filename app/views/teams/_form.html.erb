@@ -1,7 +1,6 @@
 <%= render 'shared/form_errors', obj: @team %>
 <%= form_for team, builder: BootstrapFormBuilder do |f| %>
   <%= f.bs_text_field(:name) %>
-  <%= f.bs_text_field(:display_name) %>
   <%= f.bs_text_field(:email) %>
   <%= f.bs_text_field(:number) %>
   <%= f.bs_collection_select(:sport_id, Sport.order(:name), :id, :name, prompt: '') %>

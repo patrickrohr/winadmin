@@ -18,7 +18,7 @@
         <% l.teams.order(points: :desc, goals_difference: :desc, goals_for: :desc).each_with_index do |team, i| %>
           <tr>
             <td><%= i + 1 %>
-            <td><%= team.display_name %>
+            <td><%= team.name %>
             <td><%= team.game_count %>
             <td><%= team.points %>
             <td><%= team.goals_difference %>

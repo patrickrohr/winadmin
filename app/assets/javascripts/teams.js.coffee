@@ -7,8 +7,6 @@ $(document).on 'page:change', -> #turbolinks dom ready fix
   $('#team_sport_id, #Team_sport_id').change ->
     sport = $('#team_sport_id :selected, #Team_sport_id :selected').text()
     options = $(leagues).filter("optgroup[label='#{sport}']").html()
-    console.debug(sport)
-    console.debug(leagues)
     if options
       $('#team_league_id, #Team_league_id').html(options)
       $('#team_league_id, #Team_league_id').prop("disabled", false)

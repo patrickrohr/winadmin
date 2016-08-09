@@ -14,7 +14,7 @@
         <% l.teams.order(points: :desc, goals_difference: :desc, goals_for: :desc).each_with_index do |team, i| %>
           <tr>
             <td><%= i + 1 %>
-            <td><%= team.display_name %>
+            <td><%= team.name %>
             <td><%= team.game_count %>
             <td><%= team.points %>
             <td><%= team.goals_difference %>
@@ -41,7 +41,7 @@
         <tbody>
           <% gameday.games.each do |game| %>
             <tr>
-              <td><%= "#{game.team_1.display_name} : #{game.team_2.display_name}" %>
+              <td><%= "#{game.team_1.name} : #{game.team_2.name}" %>
               <td><%= game.result_printable %>
           <% end %>
       </table>
