@@ -14,7 +14,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-datepicker-rails'
 gem 'delocalize'
-
 # https://github.com/rubysherpas/paranoia
 gem "paranoia", "~> 2.0"
 
@@ -44,4 +43,5 @@ group :production do
   gem 'rails_12factor', '0.0.2' # for heroku, implements 12factor.net ideas https://github.com/heroku/rails_12factor
   # gem 'rails_stdout_logging' # for heroku, logs to standard out https://github.com/heroku/rails_stdout_logging
   gem 'autoprefixer-rails', '~> 2.1.0' # causes problems just locally??
+  gem 'puma'
 end
