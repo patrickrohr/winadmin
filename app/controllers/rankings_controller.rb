@@ -30,10 +30,10 @@ class RankingsController < ApplicationController
 
         # go through all the sets and calculate goal difference
         game.gamesets.each do |set|
-          team_goals_for[game.team_1_id] += set.points_team_1
-          team_goals_for[game.team_2_id] += set.points_team_2
-          team_goals_against[game.team_1_id] += set.points_team_2
-          team_goals_against[game.team_2_id] += set.points_team_1
+          team_goals_for[game.team_1_id] += set.points_team_1.to_i
+          team_goals_for[game.team_2_id] += set.points_team_2.to_i
+          team_goals_against[game.team_1_id] += set.points_team_2.to_i
+          team_goals_against[game.team_2_id] += set.points_team_1.to_i
         end
 
       end

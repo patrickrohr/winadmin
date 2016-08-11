@@ -15,6 +15,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-datepicker-rails'
 gem 'delocalize'
 
+# https://github.com/rubysherpas/paranoia
+gem "paranoia", "~> 2.0"
+
 # https://github.com/leshill/handlebars_assets
 gem 'handlebars_assets'
 

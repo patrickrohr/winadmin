@@ -15,9 +15,10 @@ class Session
   end
 
   def authenticate
-    self.user = User.find_by(email: self.email)
-    unless self.user.nil?
-      if self.user.authenticate(@password)
+    user = User.find_by(email: self.email)
+    unless user.nil?
+      #raise user.inspect
+      if self.user = user.authenticate(@password)
         save
         return true
       end
@@ -36,10 +37,8 @@ class Session
   end
 
   def destroy
-    @session[:user_id] = nil
-    self.user = nil
-    self.email = nil
-    self.password = nil
+    #@session[:user_id] = nil
+    @session.delete(:user_id)
   end
 
   def authenticated?

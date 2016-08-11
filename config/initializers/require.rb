@@ -1,0 +1,1 @@
+require "#{Rails.root}/lib/generate_readable_password" 

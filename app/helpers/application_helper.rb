@@ -33,7 +33,7 @@ module ApplicationHelper
 
   #TODO: add translations to I18n file
   def action_label_for(controller, action)
-    I18n.t action.to_sym, scope: controller.to_s, default: action.to_s.humanize
+    I18n.t action.to_sym, scope: 'navigation', default: action.to_s.humanize
   end
 
   def controller_label_for(controller)

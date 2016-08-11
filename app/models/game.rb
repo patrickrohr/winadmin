@@ -1,4 +1,5 @@
 class Game < ActiveRecord::Base
+  acts_as_paranoid # introduces soft-delete just to be safe
   belongs_to :league
   belongs_to :gameday
   has_many :gamesets, dependent: :destroy

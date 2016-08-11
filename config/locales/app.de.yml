@@ -64,6 +64,7 @@ de:
         name: "Name"
         number_of_sets: "Anzahl Spielsätze"
       team:
+        number: "Nummer"
         name: "Name"
         display_name: "Anzeigename"
         email: "E-Mail"
@@ -83,6 +84,10 @@ de:
     sports: "Sportarten"
     teams: "Teams"
     users: "Benutzer"
+  navigation:
+    index: "Übersicht"
+    new: "Neu"
+    help: "Hilfe"
   static_pages:
     help: "Hilfe"
 
