@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
     if self.user_session.authenticate
       redirect_to root_path
     else
-      raise "b"
-      render :new, alert: I18n.t(:login_failed)
+      flash.now.alert = I18n.t(:login_failed)
+      render :new
     end
   end
 
