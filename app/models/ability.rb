@@ -13,11 +13,11 @@ class Ability
     case user.rights_group.name
     when 'Admin'
         can :manage, :all
-    when 'Redaktor'
+    when 'Veranstalter'
         can :crud, Game
         can :collection_create, Game
         can :see_menu, [:results, :rankings]
-    when 'Veranstalter'
+    when 'Redaktor'
         can :crud, Game
         can :collection_create, Game
         can :change_all_results, Game
