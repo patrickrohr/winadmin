@@ -10,6 +10,10 @@ class League < ActiveRecord::Base
     "#{number}. Liga"
   end
 
+  def grouped_collection_display_number
+    "#{sport.name}: #{number}. Liga"
+  end
+
   private
   def check_dependencies
     sport.errors.add(:base, I18n.t(:league_not_empty, number: self.number)) unless teams.size == 0

@@ -32,6 +32,7 @@ de:
   rankings_generate: "Rangliste erstellen"
   login: "Anmelden"
   forgot_password: "Passwort vergessen"
+  sport_league: "Sport / Liga: "
   helpers:
     label:
       session:
@@ -59,13 +60,15 @@ de:
       gameset:
         number: "Nummer"
       league:
-        number: 
+        number: "Nummber"
       sport:
         name: "Name"
+        number_of_leagues: "Anzahl Ligen"
         number_of_sets: "Anzahl Spielsätze"
       team:
         number: "Nummer"
         name: "Name"
+        league_id: "Sport / Liga"
         display_name: "Anzeigename"
         email: "E-Mail"
         points: "Punkte"
@@ -75,7 +78,7 @@ de:
         first_name: "Vorname"
         last_name: "Nachname"
         email: "E-Mail"
-        rights_group: "Rechtegruppe"
+        rights_group_id: "Benutzer Rechte"
   controllers:
     gamedays: "Spieltage"
     matchups: "Begegnungen"

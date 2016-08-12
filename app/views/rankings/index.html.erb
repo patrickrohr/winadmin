@@ -19,9 +19,9 @@
           <tr>
             <td><%= i + 1 %>
             <td><%= team.name %>
-            <td><%= team.game_count %>
-            <td><%= team.points %>
-            <td><%= team.goals_difference %>
+            <td><%= team.game_count.to_i %>
+            <td><%= team.points.to_i %>
+            <td><%= team.goals_difference.to_i %>
         <% end %>
     </table>
   </div>

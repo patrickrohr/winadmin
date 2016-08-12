@@ -1,9 +1,7 @@
   <%= render 'shared/form_errors', obj: @gameday_set %><%= form_for @gameday_set do |f| %>
   <div class="form-group form-inline">
-    <%= label_tag :sport_id %>
-    <%= f.collection_select(:sport_id, Sport.order(:name), :id, :name, { prompt: '' }, { class: 'form-control', id: 'team_sport_id' }) %>
-    <%= label_tag :league_id %>
-    <%= f.grouped_collection_select(:league_id, Sport.order(:name), :leagues, :name, :id, :number, { prompt: '' }, { class: 'form-control', id: 'team_league_id' }) %>
+    <%= label_tag :league_id, t(:sport_league)  %>
+    <%= f.grouped_collection_select(:league_id, Sport.order(:name), :leagues, :name, :id, :grouped_collection_display_number, { prompt: '' }, { class: 'form-control', id: 'team_league_id' }) %>
   </div>
   <div id="gameday-datepicker"></div>
   <div id="gameday-set">

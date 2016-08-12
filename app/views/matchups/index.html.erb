@@ -2,12 +2,12 @@
   <%= render partial: 'shared/filter', locals: { obj: Sport.all, label: t(:sports_filter) } %>
 </p>
 
-<% @leagues.each do |l| %>
-  <h1><%= l.number %>. Liga</h1>
-  <%= form_for @game_set do |f| %>
+<%= form_for @game_set do |f| %>
+  <% @leagues.each do |l| %>
+    <h1><%= l.number %>. Liga</h1>
     <% l.gamedays.each do |gd| %>
       <h4><%= "#{gd.date} #{gd.location}" %></h4>
-      <%= link_to 'Add Game', '#', class: 'addgame', data: { id: gd.id } %>
+      <%= link_to 'Spiel hinzufügen', '#', class: 'addgame', data: { id: gd.id } %>
       <div class="game-set" id="<%= gd.id %>">
         <%= f.fields_for :games, f.object.games.where(gameday_id: gd.id) do |game| %>
           <div class="form-group form-inline">

@@ -51,7 +51,7 @@ class Game < ActiveRecord::Base
   end
 
   def played?
-    return tie? || winner_id > 0
+    return tie? || winner_id.to_i > 0
   end
 
   def create_gamesets
