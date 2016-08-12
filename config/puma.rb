@@ -1,5 +1,5 @@
 # somehow puma does not work locally and it's getting late here. So f*** that.
-if Rails.env.production?
+if ::Rails.env.production?
   workers Integer(ENV['WEB_CONCURRENCY'] || 2)
   threads_count = Integer(ENV['RAILS_MAX_THREADS'] || 5)
   threads threads_count, threads_count
