@@ -14,6 +14,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-datepicker-rails'
 gem 'delocalize'
+
+# https://github.com/adzap/validates_timeliness
+gem 'validates_timeliness', '~> 4.0'
+
 # https://github.com/rubysherpas/paranoia
 gem "paranoia", "~> 2.0"
 

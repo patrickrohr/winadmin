@@ -6,6 +6,7 @@ class GamedaysController < ApplicationController
   end
 
   def create_many
+    #raise gamedayset_params.inspect
     @gameday_set = GamedaySet.new(gamedayset_params)
     if @gameday_set.save
       redirect_to({ action: :index }, success: t(:object_created))
@@ -38,6 +39,6 @@ class GamedaysController < ApplicationController
   end
 
   def gamedayset_params
-    params.require(:gameday_set).permit(:sport_id, :league_id, gamedays_attributes: [:date, :location, :league_id])
+    params.require(:gameday_set).permit(:league_id, gamedays_attributes: [:date, :location, :league_id])
   end
 end

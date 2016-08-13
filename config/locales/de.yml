@@ -1,6 +1,11 @@
 de:
   activerecord:
     errors:
+      models:
+        gameday:
+          attributes:
+            date:
+              invalid_date: "wurde nicht eingegeben."
       messages:
         record_invalid: 'Gültigkeitsprüfung ist fehlgeschlagen: %{errors}'
         restrict_dependent_destroy:

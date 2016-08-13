@@ -39,11 +39,6 @@ namespace :deploy do
     puts 'Taking the app out of maintenance mode ...'
     puts `heroku maintenance:off`
   end
-
-  task :assets_precompile do
-    puts 'Precompiling assets ...'
-    puts `heroku rake assets:precompile`
-  end
  
   task :push_previous do
     releases = `git tag`.split("\n").select { |t| t[0..7] == 'release-' }.sort
