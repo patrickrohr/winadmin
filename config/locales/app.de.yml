@@ -4,6 +4,7 @@ de:
   close: "Schliessen"
   users_index: "Benutzer"
   sports_index: "Sportarten"
+  gamedays_index: "Spieltage"
   actions: "Aktionen"
   delete_confirm: "Sind Sie sicher, dass Sie diesen Eintrag löschen wollen?"
   object_created: "Eintrag wurde erfolgreich hinzugefügt."

@@ -18,10 +18,13 @@ class Ability
         can :collection_create, Game
         can :see_menu, [:results, :rankings]
     when 'Redaktor'
-        can :crud, Game
-        can :collection_create, Game
-        can :change_all_results, Game
-        can :see_menu, [:results, :rankings]
+        can :manage, :all
+        cannot :manage, User
+        cannot :see_menu, [:users]
+        #can :crud, Game
+        #can :collection_create, Game
+        #can :change_all_results, Game
+        #can :see_menu, [:results, :rankings]
     end
 
 
