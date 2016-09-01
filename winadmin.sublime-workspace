@@ -184,114 +184,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/teams/_form.html.erb",
+			"file": "app/models/ability.rb",
 			"settings":
 			{
-				"buffer_size": 476,
+				"buffer_size": 1693,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/public/show.html.erb",
+			"file": "app/views/static_pages/help.html.erb",
 			"settings":
 			{
-				"buffer_size": 1466,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/rankings/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 993,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/puma.rb",
-			"settings":
-			{
-				"buffer_size": 559,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/application.rb",
-			"settings":
-			{
-				"buffer_size": 1198,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "lib/tasks/deploy.rake",
-			"settings":
-			{
-				"buffer_size": 2532,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/layouts/_navbar.html.erb",
-			"settings":
-			{
-				"buffer_size": 899,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 933,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/gamedays_controller.rb",
-			"settings":
-			{
-				"buffer_size": 879,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/gameday_set.rb",
-			"settings":
-			{
-				"buffer_size": 649,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/gameday.rb",
-			"settings":
-			{
-				"buffer_size": 639,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config/locales/de.yml",
-			"settings":
-			{
-				"buffer_size": 5513,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/models/league.rb",
-			"settings":
-			{
-				"buffer_size": 565,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views/gamedays/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1113,
+				"buffer_size": 904,
 				"line_ending": "Windows"
 			}
 		}
@@ -379,7 +283,7 @@
 	[
 		"/C/Sites/winadmin",
 		"/C/Sites/winadmin/app",
-		"/C/Sites/winadmin/app/models",
+		"/C/Sites/winadmin/app/helpers",
 		"/C/Sites/winadmin/app/views",
 		"/C/Sites/winadmin/app/views/gamedays",
 		"/C/Sites/winadmin/app/views/layouts",
@@ -387,28 +291,37 @@
 		"/C/Sites/winadmin/app/views/public",
 		"/C/Sites/winadmin/app/views/rankings",
 		"/C/Sites/winadmin/app/views/sports",
-		"/C/Sites/winadmin/app/views/static_pages",
-		"/C/Sites/winadmin/config/initializers"
+		"/C/Sites/winadmin/app/views/static_pages"
 	],
 	"file_history":
 	[
 		"/C/Sites/winadmin/app/models/gameday.rb",
+		"/C/Sites/winadmin/config/locales/de.yml",
+		"/C/Sites/winadmin/app/views/teams/_form.html.erb",
+		"/C/Sites/winadmin/app/views/public/show.html.erb",
+		"/C/Sites/winadmin/app/views/rankings/index.html.erb",
+		"/C/Sites/winadmin/config/puma.rb",
+		"/C/Sites/winadmin/config/application.rb",
+		"/C/Sites/winadmin/lib/tasks/deploy.rake",
+		"/C/Sites/winadmin/app/views/gamedays/_form.html.erb",
+		"/C/Sites/winadmin/app/models/league.rb",
+		"/C/Sites/winadmin/app/models/gameday_set.rb",
+		"/C/Sites/winadmin/app/controllers/gamedays_controller.rb",
+		"/C/Sites/winadmin/app/views/gamedays/index.html.erb",
+		"/C/Sites/winadmin/config/locales/app.de.yml",
+		"/C/Sites/winadmin/app/views/layouts/_navbar.html.erb",
 		"/C/Sites/winadmin/Gemfile",
 		"/C/Sites/winadmin/Procfile",
-		"/C/Sites/winadmin/app/views/public/show.html.erb",
 		"/C/Sites/winadmin/app/models/game.rb",
 		"/C/Sites/winadmin/app/assets/javascripts/teams.js.coffee",
 		"/C/Sites/winadmin/app/views/static_pages/help.html.erb",
 		"/C/Sites/winadmin/app/views/matchups/index.html.erb",
-		"/C/Sites/winadmin/config/locales/app.de.yml",
 		"/C/Sites/winadmin/app/models/ability.rb",
 		"/C/Sites/winadmin/app/views/layouts/application.html.erb",
 		"/C/Sites/winadmin/app/views/static_pages/index.html.erb",
-		"/C/Sites/winadmin/lib/tasks/deploy.rake",
 		"/C/Sites/winadmin/app/controllers/sessions_controller.rb",
 		"/C/Sites/winadmin/app/helpers/application_helper.rb",
 		"/C/Sites/winadmin/config/locales/app.en.yml",
-		"/C/Sites/winadmin/config/puma.rb",
 		"/C/Sites/winadmin/app/models/team.rb",
 		"/C/Sites/winadmin/db/schema.rb",
 		"/C/Sites/winadmin/lib/pwgen.rb",
@@ -426,24 +339,19 @@
 		"/C/Sites/winadmin/app/controllers/application_controller.rb",
 		"/C/Sites/winadmin/config/database.yml",
 		"/C/Sites/winadmin/config/environments/development.rb",
-		"/C/Sites/winadmin/config/application.rb",
 		"/C/Sites/winadmin/app/controllers/rankings_controller.rb",
-		"/C/Sites/winadmin/app/views/teams/_form.html.erb",
 		"/C/Sites/winadmin/app/models/gameset.rb",
 		"/C/Sites/winadmin/config/secrets.yml",
 		"/C/Sites/winadmin/config/initializers/assets.rb",
 		"/C/Sites/winadmin/app/views/teams/show.html.erb",
 		"/C/Sites/winadmin/app/views/results/index.html.erb",
-		"/C/Sites/winadmin/app/views/rankings/index.html.erb",
 		"/C/Sites/winadmin/app/views/matchups/_form_generate.html.erb",
-		"/C/Sites/winadmin/app/models/league.rb",
 		"/C/Sites/winadmin/app/controllers/teams_controller.rb",
 		"/C/Sites/winadmin/app/controllers/results_controller.rb",
 		"/C/Sites/winadmin/config/routes.rb",
 		"/C/Sites/winadmin/app/views/public/index.html.erb",
 		"/C/Sites/winadmin/app/controllers/public_controller.rb",
 		"/C/Sites/winadmin/app/controllers/users_controller.rb",
-		"/C/Sites/winadmin/config/locales/de.yml",
 		"/C/Sites/winadmin/app/views/layouts/public.html.erb",
 		"/C/Sites/winadmin/db/migrate/20160806191320_remove_difference_from_teams.rb",
 		"/G/Sites/winadmin/lib/tasks/deploy.rake",
@@ -514,12 +422,7 @@
 		"/G/Sites/winadmin/config/initializers/inflections.rb",
 		"/G/Sites/winadmin/config/initializers/rails_defaults.rb",
 		"/G/Sites/winadmin/app/assets/stylesheets/application.css.scss",
-		"/G/Sites/winadmin/app/views/teams/show.html.erb",
-		"/G/Sites/winadmin/app/controllers/game_days_controller.rb",
-		"/G/Sites/winadmin/app/views/teams/edit.html.erb",
-		"/G/Sites/winadmin/app/views/sports/index.html.erb",
-		"/G/Sites/winadmin/app/views/sports/_form.html.erb",
-		"/G/Sites/winadmin/app/views/teams/new.html.erb"
+		"/G/Sites/winadmin/app/views/teams/show.html.erb"
 	],
 	"find":
 	{
@@ -542,6 +445,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"date",
+			"see_menu",
 			"models.",
 			", ",
 			"team",
@@ -605,142 +510,24 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/teams/_form.html.erb",
+					"file": "app/models/ability.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 476,
+						"buffer_size": 1693,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								419,
-								419
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/views/public/show.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								784,
-								784
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/rankings/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 993,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								993,
-								993
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 16.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "config/puma.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								559,
-								559
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 4.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "config/application.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1198,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1198,
-								1198
+								557,
+								557
 							]
 						],
 						"settings":
@@ -753,84 +540,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "lib/tasks/deploy.rake",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1032,
-								1032
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/_navbar.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 899,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								350,
-								350
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/views/layouts/application.html.erb",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "app/views/static_pages/help.html.erb",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 933,
+						"buffer_size": 904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								250,
+								250
 							]
 						],
 						"settings":
@@ -844,186 +571,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/controllers/gamedays_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 879,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								147,
-								147
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/models/gameday_set.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 649,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/models/gameday.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 639,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								639,
-								639
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "config/locales/de.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "app/models/league.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								324,
-								357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "app/views/gamedays/_form.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								176,
-								176
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
 					"type": "text"
 				}
 			]
@@ -1086,6 +633,18 @@
 				"config\\locales\\de.yml"
 			],
 			[
+				"gameda",
+				"app\\models\\gameday.rb"
+			],
+			[
+				"appde",
+				"config\\locales\\app.de.yml"
+			],
+			[
+				"viewgami",
+				"app\\views\\gamedays\\index.html.erb"
+			],
+			[
 				"gamed",
 				"app\\models\\gameday.rb"
 			],
@@ -1116,10 +675,6 @@
 			[
 				"game",
 				"app\\models\\game.rb"
-			],
-			[
-				"appde",
-				"config\\locales\\app.de.yml"
 			],
 			[
 				"leageu",
@@ -1584,14 +1139,6 @@
 			[
 				"lic",
 				"app\\controllers\\license_plates_controller.rb"
-			],
-			[
-				"reseshow",
-				"app\\views\\reservations\\show.html.erb"
-			],
-			[
-				"licensint",
-				"app\\views\\license_plates\\index.html.erb"
 			]
 		],
 		"width": 0.0
