@@ -9,7 +9,7 @@ class PublicController < ApplicationController
   end
 
   def show
-    response.headers["X-FRAME-OPTIONS"] = "ALLOW-FROM http://gltv.ch" # allow from IFRAME
+    response.headers.except! 'X-Frame-Options' # allow from IFRAME
     @sport = Sport.find params[:id]
   end
 end
