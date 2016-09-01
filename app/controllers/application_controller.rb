@@ -7,6 +7,9 @@ class ApplicationController < ActionController::Base
   add_flash_types :success
   helper_method :has_rights, :user_is, :user_session
 
+  after_filter :set_header_for_iframe
+
+
   attr_accessor :user_session
   before_filter :load_user_session
 
@@ -99,5 +102,9 @@ class ApplicationController < ActionController::Base
   private
   def check_for_rights(*groups) # :admin, :veranstalter, :redaktor
     groups.include? user_session.rights_group.symbol
+  end
+
+  def set_header_for_iframe
+    response.headers.delete "X-Frame-Options"
   end
 end
