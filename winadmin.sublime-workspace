@@ -208,6 +208,22 @@
 			}
 		},
 		{
+			"file": "app/views/layouts/public.html.erb",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Sites/test.rb",
+			"settings":
+			{
+				"buffer_size": 662,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/controllers/application_controller.rb",
 			"settings":
 			{
@@ -314,17 +330,9 @@
 	"expanded_folders":
 	[
 		"/C/Sites/winadmin",
-		"/C/Sites/winadmin/app/helpers",
+		"/C/Sites/winadmin/app",
 		"/C/Sites/winadmin/app/views",
-		"/C/Sites/winadmin/app/views/gamedays",
-		"/C/Sites/winadmin/app/views/layouts",
-		"/C/Sites/winadmin/app/views/matchups",
-		"/C/Sites/winadmin/app/views/public",
-		"/C/Sites/winadmin/app/views/rankings",
-		"/C/Sites/winadmin/app/views/sports",
-		"/C/Sites/winadmin/app/views/static_pages",
-		"/C/Sites/winadmin/config",
-		"/C/Sites/winadmin/config/environments"
+		"/C/Sites/winadmin/app/views/layouts"
 	],
 	"file_history":
 	[
@@ -543,7 +551,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -573,7 +581,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -603,7 +611,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -619,8 +627,8 @@
 						"selection":
 						[
 							[
-								109,
-								109
+								198,
+								198
 							]
 						],
 						"settings":
@@ -628,14 +636,70 @@
 							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 16.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/layouts/public.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Sites/test.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 662,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "app/controllers/application_controller.rb",
 					"semi_transient": false,
 					"settings":
@@ -661,11 +725,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "lib/tasks/deploy.rake",
 					"semi_transient": false,
 					"settings":
@@ -691,11 +755,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "Gemfile",
 					"semi_transient": false,
 					"settings":
@@ -719,7 +783,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
