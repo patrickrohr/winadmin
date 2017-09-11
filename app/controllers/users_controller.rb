@@ -13,6 +13,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      # right now emails are delivered immediately
+      # this is considered bad practice
+      # TODO: https://devcenter.heroku.com/articles/delayed-job
       UserMailer.new_user(@user).deliver
       redirect_to users_path, success: I18n.t(:object_created)
     else
@@ -50,6 +53,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:first_name, :last_name, :email, :rights_group_id)
+    params.require(:user).permit(:first_name, :last_name, :email, :rights_group_id, :password)
   end
 end

@@ -3,6 +3,7 @@
   <%= f.bs_text_field(:first_name) %>
   <%= f.bs_text_field(:last_name) %>
   <%= f.bs_text_field(:email) %>
+  <%= f.bs_text_field(:password, placeholder: "AUTOMATISCH GENERIERT WENN LEER") %>
   <%= f.bs_select(:rights_group_id, RightsGroup.all_for_select) %>
   <%= f.bs_submit("SUBMIT") %>
 <% end %>
