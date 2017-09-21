@@ -1,5 +1,5 @@
 <h1>Resultate <%= @sport.name %></h1>
-<% @sport.leagues.each do |l| %>
+<% @sport.leagues.order(:number).each do |l| %>
   <h3><%= "#{l.number}. Liga" %></h3>
   <div class="responsive-table">
     <table class="table table-condensed table-responsive">
@@ -28,7 +28,7 @@
 
 <h2>Spiele</h2>
 
-<% @sport.leagues.each do |l| %>
+<% @sport.leagues.order(:number).each do |l| %>
   <h3><%= "#{l.number}. Liga" %></h3>
   <% l.gamedays.order(date: :asc).each do |gameday| %>
     <h4><%= "#{gameday.date} - #{gameday.location}" %></h4>
