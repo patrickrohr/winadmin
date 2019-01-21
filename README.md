@@ -1,1 +1,1 @@
-# Sports League Management Tool written in Ruby on Rails
+Sports League Management Tool written in Ruby on Rails
